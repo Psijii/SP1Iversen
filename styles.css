@@ -27,15 +27,19 @@ a {
 	color: var(--white);
 	border-style: none;
 	border-radius: 5px;
+	
+}
+#visit-btn {
 	font-size: x-large;
 }
 .visit {
 text-align: center;
 position: absolute;
 top: 35%;
-left: 80%;
+left: 90%;
 transform: translate(-65%, -15%);
 color: white;
+width: 300px;
 }
 
 .heroindex {
@@ -48,11 +52,16 @@ color: white;
   text-align: center;
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 15%;
   transform: translate(-10%, -15%);
   color: white;
 }
-
+.gallery {
+	padding-bottom: 10px;
+	height: 190px;
+	background: rgb(0,0,0);
+	background: linear-gradient(250deg, rgba(0,0,0,1) 0%, rgba(46,80,95,1) 55%);
+}
 /*styling the navbar/headermenu*/
 .navbar #nav-check, .navbar .nav-btn{
 	display: none;
@@ -88,6 +97,10 @@ color: white;
 (max-width:64.0625rem) {
 	
 	.button {
+		width: 150px;
+		font-size: 16px;
+	}
+	#visit-btn {
 		width: 150px;
 		font-size: 16px;
 	}
