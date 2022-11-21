@@ -1,0 +1,166 @@
+
+/*root styles */
+:root {
+	--blue: #0F1359;
+	--pink: #772667;
+	--white: #F2F2F2;
+	--green: #2d7a17;
+	--font-size: 1em;
+}
+
+/*bg styles etc */
+body {
+	background-color: white;
+	height: 100%;
+	background-size: 85%;
+	background-position: top, center;
+	background-repeat: no-repeat;
+	background-color: var(--blue);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: var(--font-size);
+	overflow-x: hidden;
+	padding: 0.9375rem;
+	color: var(--white);
+	z-index: 1;
+}
+
+label {
+	color: var(--blue);
+}
+h1 {
+	text-align: center;
+	color: var(--white);
+}
+
+h2 {
+	color: var(--green);
+}
+
+a,
+li,
+p {
+	list-style: none;
+	text-decoration: none;
+	color: var(--white)
+}
+
+img,
+input {
+	border-radius: 0.3125rem;
+}
+
+
+
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.625rem;
+	background-color: var(--blue);
+	margin: auto;
+}
+
+.nav-links a {
+	color: var(--white);
+	padding-left: 0.625rem;
+}
+
+.nav-links a:hover {
+	color: #E21CE0;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	font-size: 1.125rem;
+	z-index: 1;
+	padding: 0.625rem;
+	
+}
+
+.menu li {
+	padding: 0.3125rem 0.875rem;
+}
+
+/*responsive menu haxx*/
+input[type=checkbox] {
+	display: none;
+}
+
+/*hamburger menu*/
+.hamburger {
+	display: none;
+	font-size: 1.5rem;
+	user-select: none;
+}
+
+/*Media queries*/
+@media screen and 
+(max-width:20rem),
+(max-width:30.0625rem),
+(max-width:40.0625rem),
+(max-width:60.0625rem),
+(max-width:64.0625rem) {
+.menu { 
+  display:none;
+  position: absolute;
+  background-color:var(--blue);
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 1rem 0;
+  color:var(--white);
+}
+.navbar .nav-btn{
+  display: inline-block;
+  position: absolute;
+  top: 1.875rem;
+  right: 0px;
+}
+.navbar .nav-btn label {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  padding: 1.5625rem;
+}
+.navbar .nav-btn label span {
+  display: block;
+  height: 0.625rem;
+  width: 1.5625rem;
+  border-top: 0.1875rem solid var(--white);
+  border-radius: 0.125rem;
+}
+.navbar .nav-links{
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 50%;
+  background-color: var(--blue);
+  overflow-y: hidden;
+  top: 4.375rem;
+  right: 0px;
+  z-index: 0;
+}
+.navbar .nav-links a {
+  display: block;
+  padding: 0.625rem;
+}
+ .navbar #nav-check:not(:checked) ~ .nav-links {
+  height: 0px;
+}
+
+.navbar #nav-check:checked ~ .nav-links {
+  height: 12.5rem;
+  top: 5rem;
+}
+
+.navbar .nav-links  {
+  padding: 0;
+  margin: 1.25rem;
+  font-size: 1rem;
+  color: var(--white);
+}
+}
