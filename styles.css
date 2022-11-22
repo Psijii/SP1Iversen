@@ -1,8 +1,8 @@
 /*root styles */
 :root {
-	--dblue: #313628;
+	--dgreen: #313628;
 	--gold: #D9A443;
-	--teal: #7A8C68;
+	--lgreen: #7A8C68;
 	--lblue: #A7BDD9;
 	--white: #EBF2FC;
 	--font-size: 1em;
@@ -10,16 +10,23 @@
 
 /*bg styles etc */
 body {
-	background-color: black;
+	background-color: none;
+	width: 100%;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: var(--font-size);
 	overflow-x: hidden;
-	
+	margin: 0;
 }
 
 a {
   text-decoration: none;
 }
+
+li {
+	list-style: none;
+	padding-bottom: 5px;
+}
+
 
 .button {
 	background-color: var(--gold);
@@ -46,7 +53,7 @@ a {
 	height: 950px;
   background-position: center;
 	background-size: cover;
-	width: 100%;
+	width: 100%; 
 }
 .hero_text {
   text-align: center;
@@ -63,74 +70,120 @@ a {
   left: 15%;
   transform: translate(-10%, -15%);
 	color: white;
-	
+}
+
+
+/*events exhibitions etc */
+
+.events_bg {
+	background-color: var(--dgreen);
+	width: 100%;
+}
+.headline_events {
+	color: var(--white);
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	align-items: baseline;
 }
 
 .gallery {
 	width: 300px;
 	margin: 8px;
-
 }
+
 .container {
 	display: flex;	
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+	color: var(--white);
 }
 .photo {
 	height: 200px;
 	background-size: cover;
 }
 
-.desc {
+.desc_headline {
 	color: var(--white);
-	background-color: var(--gold);
-	padding: 10px;
 	text-align: center;
-	font-weight: bold;
-	font-size: x-large;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	margin-top: -5px;
+	font-size: large;
 }
-
-.astronautimg {
-	background-image: url('images/astronaut_350x.jpg');
-	background-size: cover;
-	border-radius: 5px;
-}
-
-.schoolimg {
-	background-image: url('images/school_350x.jpg');
-	background-size: cover;
-	border-radius: 5px;
-}
-
-.visitimg {
-	background-image: url('images/museumitem_350x.jpg');
-	background-size: cover;
-	border-radius: 5px;
-}
-
-.opening_hrs {
-	display: flex;
-	padding: 10px;
-	height: 250px;
-	background-color: #313628;
+.desc_text {
 	color: var(--white);
+}
+
+.prof_event_img {
+	background-image: url('images/spaceprof.jpg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.energy_event_img {
+	background-image: url('images/energy.jpg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.museum_night_event_img {
+	background-image: url('images/museumnight.jpg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+/*Info about opening hours and entrance */
+.museum_info_bg {
+	background-color: var(--lgreen);
 	width: 100%;
 }
+.museumopen {
+	width: 50%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	margin: auto;
+	align-items: baseline;
+}
+
+.museum_info_entrance {
+	display: flex;
+	padding: 10px;
+	height: auto;
+	color: var(--white);
+	width: 200px;
+	flex-direction: column;
+}
+.museum_info_hrs {
+	display: flex;
+	padding: 10px;
+	height: auto;
+	color: var(--white);
+	width: 300px;
+	flex-direction: column;
+}
+.museum_info_hrs_list {
+	padding: 5px;
+}
+.museum_info_days_list {
+	padding: 5px;
+}
+
 .visit_hrs {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-evenly;
+	margin:  auto;
 }
-.entrance_hrs {
-	display: flex;
-	flex-direction: column;
-	padding-left: 20px;
+#visit_hrs_text {
+ font-size: x-large;
+ display: flex;
+ margin:  auto;
+ padding: 5px;
+ color: var(--white);
 }
-/*styling the navbar/headermenu*/
+
+
+/*NAVBAR */
 .navbar #nav-check, .navbar .nav-btn {
 	display: none;
 	
@@ -139,8 +192,8 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: right;
-	background-color: var(--dblue);
-	margin: auto;
+	background-color: var(--dgreen);
+	MARGIN-TOP: 10PX;
 	height: 80px;
 	font-size: x-large;
 	width: 100%;
@@ -168,6 +221,15 @@ a {
 (max-width:40.0625rem),
 (max-width:60.0625rem),
 (max-width:64.0625rem) {
+
+#visit_hrs_text {
+	font-size: 16px;
+	font-weight: bold;
+}
+.museum_info {
+	display: flex;
+	flex-direction: column;
+}
 
 	.gallery { 
 		width: 200px; 
@@ -218,7 +280,7 @@ a {
     display: block;
     text-align: center;
     width: 50%;
-    background-color: var(--dblue);
+    background-color: var(--dgreen);
     overflow-y: hidden;
     top: 4.375rem;
 		right: 0px;
