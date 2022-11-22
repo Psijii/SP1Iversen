@@ -1,6 +1,6 @@
 /*root styles */
 :root {
-	--dblue: #34592A;
+	--dblue: #313628;
 	--gold: #D9A443;
 	--teal: #7A8C68;
 	--lblue: #A7BDD9;
@@ -43,7 +43,7 @@ a {
 
 .hero_index {
 	background-image:  url('images/butterflybg.jpg');
-	height: 900px;
+	height: 950px;
   background-position: center;
 	background-size: cover;
 	width: 100%;
@@ -113,15 +113,23 @@ a {
 	border-radius: 5px;
 }
 
-.gallerybg {
+.opening_hrs {
 	display: flex;
 	padding: 10px;
 	height: 250px;
-	background: rgb(0,0,0);
-	background: linear-gradient(250deg, rgba(0,0,0,1) 0%, rgba(46,80,95,1) 55%);
+	background-color: #313628;
+	color: var(--white);
+	width: 100%;
 }
-
-
+.visit_hrs {
+	display: flex;
+	flex-direction: column;
+}
+.entrance_hrs {
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+}
 /*styling the navbar/headermenu*/
 .navbar #nav-check, .navbar .nav-btn {
 	display: none;
