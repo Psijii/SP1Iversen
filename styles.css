@@ -133,6 +133,7 @@ a {
 /*styling the navbar/headermenu*/
 .navbar #nav-check, .navbar .nav-btn {
 	display: none;
+	
 }
 .navbar {
 	display: flex;
@@ -143,6 +144,9 @@ a {
 	height: 80px;
 	font-size: x-large;
 	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
 }
 
 .nav-links a {
