@@ -1,12 +1,13 @@
 /*root styles */
 :root {
-	--dgreen: #313628;
+	--dblue: #1C3240;
 	--gold: #D9A443;
 	--lgreen: #7A8C68;
 	--lblue: #A7BDD9;
-	--white: #EBF2FC;
-	--font-size: 1em;
-}
+	--white: #F5F8F0;
+	--purple: #2F1A34;
+	--orange: #BF522A;
+ }
 
 /*bg styles etc */
 body {
@@ -49,34 +50,50 @@ li {
 }
 
 .hero_index {
-	background-image:  url('images/butterflybg.jpg');
+	background-image:  url('images/hero_space.jpg');
 	height: 950px;
   background-position: center;
 	background-size: cover;
 	width: 100%; 
 }
 .hero_text {
-  text-align: center;
-  position: absolute;
+	text-align: center;
+  color: white;
+	font-size: xx-large;
+}
+.space_event {
+	text-align: center;
+	color: white;
+	font-size: x-large;
+}
+.headline_bg {
+	background-color: var(--purple);
+	width: 500px;
+	height: 250px;
+	position: absolute;
   top: 10%;
   left: 15%;
   transform: translate(-10%, -15%);
-  color: white;
-}
-.eco_event {
-	text-align: left;
-  position: absolute;
-  top: 20%;
-  left: 15%;
-  transform: translate(-10%, -15%);
-	color: white;
+	padding: 5px;
 }
 
+.headline_bg_button {
+	background-color: #917B97;
+	width: 280px;
+	height: 55px;
+	color: var(--white);
+	border: none;
+	font-size: 22px;
+	display: flex;
+	align-items: center;
+	margin: auto;
+	text-align: center;
+}
 
 /*events exhibitions etc */
 
 .events_bg {
-	background-color: var(--dgreen);
+	background-color: var(--dblue);
 	width: 100%;
 }
 .headline_events {
@@ -134,7 +151,7 @@ li {
 
 /*Info about opening hours and entrance */
 .museum_info_bg {
-	background-color: var(--lgreen);
+	background-color: var(--orange);
 	width: 100%;
 }
 .museumopen {
@@ -191,10 +208,10 @@ li {
 .navbar {
 	display: flex;
 	align-items: center;
-	justify-content: right;
-	background-color: var(--dgreen);
+	justify-content: space-evenly;
+	background-color: var(--dblue);
 	MARGIN-TOP: 10PX;
-	height: 80px;
+	height: 60px;
 	font-size: x-large;
 	width: 100%;
 	position: fixed;
@@ -212,7 +229,10 @@ li {
 	color: var(--gold);
 }
 
+.logo img {
+	max-width: 95px;
 
+}
 
 /*Media queries*/
 @media screen and 
@@ -221,6 +241,17 @@ li {
 (max-width:40.0625rem),
 (max-width:60.0625rem),
 (max-width:64.0625rem) {
+	.headline_bg {
+		background-color: var(--purple);
+		width: 365px;
+		height: 250px;
+		position: absolute;
+		top: 10%;
+		left: 15%;
+		transform: translate(-10%, -15%);
+		padding: 5px;
+	
+	}
 
 #visit_hrs_text {
 	font-size: 16px;
@@ -280,7 +311,7 @@ li {
     display: block;
     text-align: center;
     width: 50%;
-    background-color: var(--dgreen);
+    background-color: var(--dblue);
     overflow-y: hidden;
     top: 4.375rem;
 		right: 0px;
