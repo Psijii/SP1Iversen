@@ -3,7 +3,7 @@
 	--dblue: #1C3240;
 	--gold: #D9A443;
 	--lgreen: #7A8C68;
-	--lblue: #A7BDD9;
+	--lblue: #2E505F;
 	--white: #F5F8F0;
 	--purple: #2F1A34;
 	--orange: #BF522A;
@@ -21,6 +21,7 @@ body {
 
 a {
   text-decoration: none;
+	
 }
 
 li {
@@ -29,12 +30,16 @@ li {
 }
 
 
-.button {
+.btn {
 	background-color: var(--gold);
 	color: var(--white);
 	border-style: none;
 	border-radius: 5px;
-	
+}
+#contact_btn {
+	font-size: 32px;
+	width: 160px;
+	margin: auto;
 }
 #visit-btn {
 	font-size: x-large;
@@ -47,6 +52,19 @@ li {
 	transform: translate(-65%, -15%);
 	color: white;
 	width: 300px;
+	margin: auto;
+
+}
+.links {
+	color: var(--white);
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.links:hover {
+	color: var(--gold);
+	transform: translateX(10px);
+  transition: transform 350ms ease-in-out;
 }
 
 .hero_index {
@@ -56,18 +74,28 @@ li {
 	background-size: cover;
 	width: 100%; 
 }
+
 .hero_text {
 	text-align: center;
   color: white;
 	font-size: xx-large;
 }
+.hero_explore {
+	background-image: url('images/vr.jpg');
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
 .space_event {
 	text-align: center;
 	color: white;
 	font-size: x-large;
 }
 .headline_bg {
-	background-color: var(--purple);
+	background-color: var(--dblue);
 	width: 500px;
 	height: 250px;
 	position: absolute;
@@ -78,7 +106,7 @@ li {
 }
 
 .headline_bg_button {
-	background-color: #917B97;
+	background-color: #555564;
 	width: 280px;
 	height: 55px;
 	color: var(--white);
@@ -98,10 +126,10 @@ li {
 }
 .headline_events {
 	color: var(--white);
-	width: 100%;
-	padding: 10px;
+	width: 900px;
 	display: flex;
 	align-items: baseline;
+	margin: auto;
 }
 
 .gallery {
@@ -129,6 +157,7 @@ li {
 }
 .desc_text {
 	color: var(--white);
+	width: auto;
 }
 
 .prof_event_img {
@@ -149,10 +178,70 @@ li {
 	border-radius: 5px;
 }
 
+/*explore the world of science */
+.explore {
+	background-color: var(--orange);
+	margin: auto;
+	width: 950px;
+	height: auto;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+.explore_research {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100%;
+}
+.explore_research_text_box{
+	display: flex;
+	flex-direction: column;
+	width: 900px;
+}
+.explore_photo {
+	height: 100%;
+	
+}
+.pupil_explore_img {
+  transform: scaleX(-1);
+	width: 445px;
+	height: 375px;
+	object-fit: cover;
+}
+
+.teacher_explore_img {
+  transform: scaleX(-1);
+	width: 445px;
+	height: 245px;
+	object-fit: cover;
+	margin-top: 50px;
+}
+
+.research_explore_img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.explore_hline {
+	font-size: 32px;
+	
+}
+.explore_text_box {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	padding-right: 10px;
+}
+
 /*Info about opening hours and entrance */
 .museum_info_bg {
-	background-color: var(--orange);
+	background-color: var(--lblue);
 	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
 }
 .museumopen {
 	width: 50%;
@@ -160,7 +249,7 @@ li {
 	justify-content: space-evenly;
 	flex-direction: row;
 	margin: auto;
-	align-items: baseline;
+	align-items: center;
 }
 
 .museum_info_entrance {
@@ -170,6 +259,8 @@ li {
 	color: var(--white);
 	width: 200px;
 	flex-direction: column;
+
+
 }
 .museum_info_hrs {
 	display: flex;
@@ -178,6 +269,7 @@ li {
 	color: var(--white);
 	width: 300px;
 	flex-direction: column;
+
 }
 .museum_info_hrs_list {
 	padding: 5px;
@@ -189,14 +281,17 @@ li {
 .visit_hrs {
 	display: flex;
 	justify-content: space-evenly;
-	margin:  auto;
+	margin: auto;
+
+
 }
 #visit_hrs_text {
  font-size: x-large;
- display: flex;
  margin:  auto;
  padding: 5px;
  color: var(--white);
+
+
 }
 
 
@@ -291,7 +386,7 @@ li {
     display: inline-block;
     position: relative;
     top: 1.875rem;
-    right: 0px;
+    left: 100px;
   }
   .navbar .nav-btn label {
     display: inline-block;
