@@ -6,15 +6,12 @@
 	--lblue: #2E505F;
 	--white: #F5F8F0;
 	--purple: #2F1A34;
-	--orange: #BF522A;
+	--almostblack: #01080D;
  }
 
 /*bg styles etc */
 body {
-	background-color: none;
-	width: 100%;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: var(--font-size);
 	overflow-x: hidden;
 	margin: 0;
 }
@@ -28,7 +25,6 @@ li {
 	list-style: none;
 	padding-bottom: 5px;
 }
-
 
 .btn {
 	background-color: var(--gold);
@@ -63,10 +59,8 @@ li {
 
 .links:hover {
 	text-decoration: underline solid transparent;
-  transition: text-decoration 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 	color: var(--gold);
-
-	
 }
 
 .hero_index {
@@ -127,10 +121,9 @@ li {
 }
 .headline_events {
 	color: var(--white);
-	width: 900px;
 	display: flex;
 	align-items: baseline;
-	margin: auto;
+	justify-content: center;
 }
 
 .gallery {
@@ -177,8 +170,20 @@ li {
 }
 
 /*explore the world of science */
+.explore_scroll_bg,
+.headline_events {
+	background-image: url('images/stars.jpg');
+	height: 100%; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	
+}
+
 .explore {
-	background-color: var(--orange);
+	background-color: var(--almostblack);
 	margin: auto;
 	width: 950px;
 	height: auto;
@@ -279,6 +284,8 @@ li {
  color: var(--white);
 }
 
+
+
 /*NAVBAR */
 .navbar #nav-check, .navbar .nav-btn {
 	display: none;
@@ -301,20 +308,17 @@ li {
 .nav-links a {
 	color: var(--white);
 	padding: 10px;
-	
 }
 
 .nav-links a:hover {
 	text-decoration: underline solid transparent;
-  transition: text-decoration 0.5s ease-in-out;
 	color: var(--gold);
+	transition: all 0.9s ease-in-out;
 }
 
 .logo img {
 	max-width: 95px;
-
 }
-
 /*Media queries*/
 @media screen and 
 (max-width:20rem),
@@ -327,7 +331,7 @@ li {
 	.museumopen {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: baseline;
 	}
 
 .headline_events {
