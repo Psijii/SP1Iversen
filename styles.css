@@ -204,29 +204,16 @@ li {
 .explore_research_text_box{
 	display: flex;
 	flex-direction: column;
-	width: 900px;
+	width: auto;
 }
 .explore_photo {
 	height: 100%;
 	
 }
-.pupil_explore_img,
-.teacher_explore_img,
-.research_explore_img {
+.explore_img {
   transform: scaleX(-1);
 	object-fit: cover;
 	border-radius: 5px;
-}
-.pupil_explore_img {
-	width: 445px;
-	height: 460px;
-}
-.teacher_explore_img {
-	width: 445px;
-
-}
-
-.research_explore_img {
 	height: 200px;
 }
 
@@ -238,7 +225,7 @@ li {
 	display: flex;
 	flex-direction: column;
 	width: auto;
-	padding-right: 10px;
+	
 }
 
 /*Info about opening hours and entrance */
@@ -330,6 +317,11 @@ li {
 (max-width:60.0625rem),
 (max-width:64.0625rem) {
 
+	.explore_research {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 345px;
+	}
 	.museum_info_hrs,
 	.museumopen {
 		display: flex;
@@ -343,13 +335,14 @@ li {
 }
 	.headline_bg {
 		background-color: var(--purple);
-		width: 365px;
+		width: 345px;
 		height: 250px;
 		position: absolute;
 		top: 10%;
 		left: 15%;
 		transform: translate(-10%, -15%);
 		padding: 5px;
+		margin: auto;
 	
 	}
 	.pupil_explore_img,
@@ -358,7 +351,7 @@ li {
 		transform: scaleX(-1);
 		object-fit: cover;
 		border-radius: 5px;
-		width: auto;
+		width: 300px;
 	 }
 	 .explore {
 		display: flex;
