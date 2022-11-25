@@ -434,9 +434,6 @@ footer {
 (max-width:961px),
 (max-width:1025px) {
 
- body {
-	overflow-x: hidden;
- }
 .container {
 	width: 100%;
 }
@@ -465,9 +462,9 @@ footer {
 		align-items: baseline;
 	}
 
-	.headline_events {
-		width: 100%;
-		padding: 5px;
+.headline_events {
+	width: 100%;
+	padding: 5px;
 }
 	.headline_bg {
 		background-color: var(--purple);
@@ -491,7 +488,7 @@ footer {
 	 .explore {
 		display: flex;
 		flex-direction: column;
-		width: 100%;
+		width: 85%;
 	 }
 
 	#visit_hrs_text {
