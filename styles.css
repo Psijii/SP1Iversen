@@ -437,6 +437,9 @@ footer {
 .container {
 	width: 100%;
 }
+.events_bg {
+	width: auto;
+}
 
  .footer_dist .footer_left,
  .footer_dist .footer_cent,
