@@ -21,7 +21,9 @@ body {
 
 a {
   text-decoration: none;
-	
+}
+a:hover {
+
 }
 
 li {
@@ -62,9 +64,9 @@ li {
 }
 
 .links:hover {
+	text-decoration: underline solid transparent;
+  transition: text-decoration 0.5s ease-in-out;
 	color: var(--gold);
-	transform: translateX(10px);
-  transition: transform 350ms ease-in-out;
 }
 
 .hero_index {
@@ -75,10 +77,14 @@ li {
 	width: 100%; 
 }
 
-.hero_text {
+.hero_text,
+.space_event {
 	text-align: center;
   color: white;
 	font-size: xx-large;
+}
+.space_event {
+	font-size: x-large;
 }
 .hero_explore {
 	background-image: url('images/vr.jpg');
@@ -89,11 +95,6 @@ li {
 	margin-bottom: 10px;
 }
 
-.space_event {
-	text-align: center;
-	color: white;
-	font-size: x-large;
-}
 .headline_bg {
 	background-color: var(--dblue);
 	width: 500px;
@@ -145,37 +146,33 @@ li {
 	margin: auto;
 	color: var(--white);
 }
-.photo {
-	height: 200px;
-	background-size: cover;
-}
+
 
 .desc_headline {
 	color: var(--white);
-	text-align: center;
+	text-align: left;
 	font-size: large;
+	padding: 5px;
 }
 .desc_text {
 	color: var(--white);
-	width: auto;
+}
+.photo {
+	height: 200px;
+	background-size: cover;
+	border-radius: 5px;
 }
 
 .prof_event_img {
 	background-image: url('images/spaceprof.jpg');
-	background-size: cover;
-	border-radius: 5px;
 }
 
 .energy_event_img {
 	background-image: url('images/energy.jpg');
-	background-size: cover;
-	border-radius: 5px;
 }
 
 .museum_night_event_img {
 	background-image: url('images/museumnight.jpg');
-	background-size: cover;
-	border-radius: 5px;
 }
 
 /*explore the world of science */
@@ -188,6 +185,7 @@ li {
 	margin-bottom: 10px;
 	display: flex;
 	flex-direction: row-reverse;
+	border-radius: 5px;
 }
 .explore_research {
 	display: flex;
@@ -203,25 +201,24 @@ li {
 	height: 100%;
 	
 }
-.pupil_explore_img {
+.pupil_explore_img,
+.teacher_explore_img,
+.research_explore_img {
   transform: scaleX(-1);
-	width: 445px;
-	height: 375px;
 	object-fit: cover;
+	border-radius: 5px;
 }
-
-.teacher_explore_img {
-  transform: scaleX(-1);
+.pupil_explore_img {
 	width: 445px;
+	height: 460px;
+}
+.teacher_explore_img {
+	width: 325px;
 	height: 245px;
-	object-fit: cover;
-	margin-top: 50px;
 }
 
 .research_explore_img {
-	width: 100%;
 	height: 200px;
-	object-fit: cover;
 }
 
 .explore_hline {
@@ -231,7 +228,7 @@ li {
 .explore_text_box {
 	display: flex;
 	flex-direction: column;
-	width: 600px;
+	width: auto;
 	padding-right: 10px;
 }
 
@@ -259,8 +256,6 @@ li {
 	color: var(--white);
 	width: 200px;
 	flex-direction: column;
-
-
 }
 .museum_info_hrs {
 	display: flex;
@@ -269,14 +264,14 @@ li {
 	color: var(--white);
 	width: 300px;
 	flex-direction: column;
+	min-height: 215px;
 
 }
-.museum_info_hrs_list {
-	padding: 5px;
-}
+.museum_info_hrs_list,
 .museum_info_days_list {
 	padding: 5px;
 }
+
 
 .visit_hrs {
 	display: flex;
@@ -321,6 +316,8 @@ li {
 }
 
 .nav-links a:hover {
+	text-decoration: underline solid transparent;
+  transition: text-decoration 0.5s ease-in-out;
 	color: var(--gold);
 }
 
@@ -347,7 +344,18 @@ li {
 		padding: 5px;
 	
 	}
-
+	.pupil_explore_img,
+	.teacher_explore_img,
+	.research_explore_img {
+		transform: scaleX(-1);
+		object-fit: cover;
+		border-radius: 5px;
+		width: auto;
+	 }
+	 .explore {
+		display: flex;
+		flex-direction: column;
+	 }
 #visit_hrs_text {
 	font-size: 16px;
 	font-weight: bold;
