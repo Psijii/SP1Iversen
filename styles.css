@@ -531,6 +531,7 @@ footer {
     position: relative;
     top: 1.875rem;
     left: 100px;
+		width: auto;
   }
   .navbar .nav-btn label {
     display: inline-block;
@@ -549,7 +550,7 @@ footer {
     position: absolute;
     display: block;
     text-align: center;
-    width: 100%;
+    width: auto;
     background-color: var(--dblue);
     overflow-y: hidden;
     top: 4.375rem;
