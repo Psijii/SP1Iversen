@@ -8,7 +8,10 @@
 	--purple: #2F1A34;
 	--almostblack: #01080D;
  }
-
+ ::selection {
+  color: var(--almostblack);
+  background: var(--white);
+ }
 /*bg styles etc */
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -219,8 +222,8 @@ li {
 	height: 460px;
 }
 .teacher_explore_img {
-	width: 325px;
-	height: 245px;
+	width: 445px;
+
 }
 
 .research_explore_img {
