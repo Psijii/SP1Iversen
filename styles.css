@@ -153,6 +153,7 @@ li {
 	text-align: left;
 	font-size: large;
 	padding: 5px;
+	
 }
 .desc_text {
 	color: var(--white);
@@ -237,11 +238,10 @@ li {
 	background-color: var(--lblue);
 	width: 100%;
 	height: auto;
-	display: flex;
-	flex-direction: column;
+
 }
 .museumopen {
-	width: 50%;
+	width: 700px;
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: row;
@@ -249,33 +249,25 @@ li {
 	align-items: center;
 }
 
-.museum_info_entrance {
-	display: flex;
-	padding: 10px;
-	height: auto;
-	color: var(--white);
-	width: 200px;
-	flex-direction: column;
-}
+.museum_info_entrance, 
 .museum_info_hrs {
 	display: flex;
 	padding: 10px;
 	height: auto;
 	color: var(--white);
-	width: 300px;
+	width: 350px;
 	flex-direction: column;
-	min-height: 215px;
 
 }
-.museum_info_hrs_list,
+.museum_info_hrs_list, 
 .museum_info_days_list {
 	padding: 5px;
 }
 
-
 .visit_hrs {
 	display: flex;
 	justify-content: space-evenly;
+	flex-direction: row;
 	margin: auto;
 
 
@@ -285,10 +277,7 @@ li {
  margin:  auto;
  padding: 5px;
  color: var(--white);
-
-
 }
-
 
 /*NAVBAR */
 .navbar #nav-check, .navbar .nav-btn {
@@ -333,6 +322,18 @@ li {
 (max-width:40.0625rem),
 (max-width:60.0625rem),
 (max-width:64.0625rem) {
+
+	.museum_info_hrs,
+	.museumopen {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+.headline_events {
+	width: 100%;
+	padding: 5px;
+}
 	.headline_bg {
 		background-color: var(--purple);
 		width: 365px;
@@ -355,6 +356,7 @@ li {
 	 .explore {
 		display: flex;
 		flex-direction: column;
+		width: auto;
 	 }
 	#visit_hrs_text {
 		font-size: 16px;
@@ -413,12 +415,14 @@ li {
     position: absolute;
     display: block;
     text-align: center;
-    width: 50%;
+    width: 100%;
     background-color: var(--dblue);
     overflow-y: hidden;
     top: 4.375rem;
-		right: 0px;
+		right: -20px;
 		z-index: 999;
+
+		
   }
   .navbar .nav-links a {
 		display: block;
@@ -430,7 +434,7 @@ li {
  
   .navbar #nav-check:checked ~ .nav-links {
 		height: 12.5rem;
-		top: 5rem;
+		top: 30px;
 	}
 	
   .navbar .nav-links  {
