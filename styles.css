@@ -318,7 +318,7 @@ li {
 (max-width:64.0625rem) {
  body {
 	overflow-x: hidden;
-	overflow-y: hidden;
+
  }
 	.explore_research {
 		display: flex;
