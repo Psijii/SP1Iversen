@@ -532,6 +532,7 @@ body {
 	object-fit: cover;
 	border-radius: 5px;
 	width: 100px;
+	height: 100px;
 }
 .visit_content {
 	display: flex;
