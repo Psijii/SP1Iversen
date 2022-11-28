@@ -246,6 +246,11 @@ address {
 	height: 100%;
 	
 }
+.visit_img {
+	object-fit: cover;
+	border-radius: 5px;
+	height: 400px;
+}
 .explore_img {
   transform: scaleX(-1);
 	object-fit: cover;
