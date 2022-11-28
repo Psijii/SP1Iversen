@@ -221,6 +221,7 @@ address {
 	
 }
 
+
 .explore {
 	background-color: var(--almostblack);
 	margin: auto;
@@ -244,13 +245,8 @@ address {
 }
 .explore_photo {
 	height: 100%;
-	
 }
-.visit_img {
-	object-fit: cover;
-	border-radius: 5px;
-	height: 400px;
-}
+
 .explore_img {
   transform: scaleX(-1);
 	object-fit: cover;
@@ -268,26 +264,24 @@ address {
 	display: flex;
 	flex-direction: column;
 	width: auto;
-	
 }
 
 /*visit page */
-.visit_bg {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('images/museumhall.jpg');
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-size: 900px;
+.visit_img {
+	object-fit: cover;
 	border-radius: 5px;
+	width: 300px;
+}
+.visit_content {
+	display: flex;
+	flex-direction: row-reverse;
+
 }
 .visit_text_box {
-	width: 800px;
-	margin: auto;
-	color: var(--white);
-	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	width: auto;
 }
-
 
 /*Info about opening hours and entrance */
 .museum_info_bg {
@@ -529,6 +523,22 @@ footer {
 body {
 	background-color: var(--dblue);
 }
+.visit_img {
+	object-fit: cover;
+	border-radius: 5px;
+	width: 100px;
+}
+.visit_content {
+	display: flex;
+	flex-direction: row-reverse;
+	width: auto;
+}
+.visit_text_box {
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+}
+
 .maploc {
 	width: 350px;
 }
