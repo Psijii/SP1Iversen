@@ -15,19 +15,21 @@
 /*bg styles etc */
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	overflow-x: hidden;
 	margin: 0;
 	background-color: var(--dblue);
+	overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
-
 }
 
 li {
 	list-style: none;
 	padding-bottom: 5px;
+}
+h1 {
+	color: var(--white);
 }
 
 .btn {
@@ -69,20 +71,23 @@ li {
 
 .hero_index {
 	height: 950px;
-	width: 100%;
   background-position: center;
 	background-size: cover;
 	margin: 0;
- 
 }
 .hero_index_img {
 	background-image:  url('images/hero_space.jpg');
 }
 .hero_text {
 	text-align: center;
-color: white;
-font-size: xx-large;
+	color: var(--white);
+	font-size: xx-large;
 }
+.hero_exhibit_img {
+	background-image:  url('images/studentmath.jpg');
+	height: 300px;
+}
+
 .headline_box {
 	width: 500px;
 	height: 250px;
@@ -114,7 +119,7 @@ font-size: xx-large;
 
 .events_bg {
 	background-color: var(--dblue);
-	width: 100%;
+
 }
 .headline_events {
 	color: var(--white);
@@ -167,12 +172,10 @@ font-size: xx-large;
 .explore_scroll_bg,
 .headline_events {
 	background-image: url('images/stars.jpg');
-	height: 100%; 
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100%;
 	
 }
 
@@ -222,7 +225,6 @@ font-size: xx-large;
 /*Info about opening hours and entrance */
 .museum_info_bg {
 	background-color: var(--lblue);
-	width: 100%;
 	height: auto;
 
 }
@@ -296,9 +298,21 @@ font-size: xx-large;
 	color: var(--gold);
 	transition: all 0.9s ease-in-out;
 }
+.logo a {
+	display: flex;
+	align-items: baseline; 
+	color: var(--white);
+}
+
+.logo a:hover {
+	color: var(--gold);
+	transition: all 0.3s ease-in-out;
+	
+}
 
 .logo img {
-	max-width: 95px;
+	max-width: 90px;
+
 }
 /*responsive footer */
 footer {
@@ -474,19 +488,20 @@ body {
 		align-items: baseline;
 		width: 100%;
 	}
-.hero_index {
-	 height: 350px;
-	 top: 0;
-}
-.headline_box {
-	width: 350px;
+	.hero_index {
+		height: 340px;
+	}
+	.headline_box {
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+		font-size: 18px;
 }
 
 	.headline_events,
 	.events_bg,
 	.container_index  {
-		width: 100%;
-		padding-left: 3px;
+		padding: 3px;
 	}
 	.headline_events h2 {
 		padding: 5px;
@@ -497,15 +512,13 @@ body {
 		object-fit: cover;
 		border-radius: 5px;
 		width: 100%;
-	 }
-.container_index {
-	width: 100%;
+	
 }
 	.explore,
 	.gallery {
 		display: flex;
 		flex-direction: column;
-		width: 85%;
+		width: 330px;
 	 }
 
 	#visit_hrs_text {
@@ -515,11 +528,7 @@ body {
 	.museum_info {
 		display: flex;
 		flex-direction: column;
-}
 
-	.gallery { 
-		width: 200px; 
-		margin: 6px; 
 	}
 	.photo { 
 		height: 133px;
