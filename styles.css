@@ -339,12 +339,10 @@ address {
 	align-items: center;
 	justify-content: space-evenly;
 	background-color: var(--dblue);
-	MARGIN-TOP: 10PX;
 	height: 60px;
 	font-size: x-large;
 	width: 100%;
 	position: fixed;
-	top: 0;
 	z-index: 1;
 }
 
