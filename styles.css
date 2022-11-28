@@ -417,6 +417,11 @@ footer {
 	text-decoration: none;
 	color:  inherit;
 }
+.footer_links a:hover {
+	text-decoration: underline solid transparent;
+	transition: all 0.5s ease-in-out;
+	color: var(--gold);
+}
 
 .footer_dist .footer_logo{
 	color:  #8f9296;
@@ -471,7 +476,7 @@ footer {
 	width: 30%;
 }
 
-.footer_dist .footer-company-about{
+.footer_dist .footer_company_about {
 	line-height: 20px;
 	color:  var(--gold);
 	font-size: 16px;
@@ -479,7 +484,7 @@ footer {
 	margin: 0;
 }
 
-.footer_dist .footer-company-about span {
+.footer_dist .footer_company_about span {
 	display: block;
 	color:  var(--white);
 	font-size: 18px;
@@ -487,11 +492,11 @@ footer {
 	margin-bottom: 20px;
 }
 
-.footer_dist .footer-icons{
+.footer_dist .footer_icons{
 	margin-top: 25px;
 }
 
-.footer_dist .footer-icons a {
+.footer_dist .footer_icons a {
 	display: inline-block;
 	width: 35px;
 	height: 35px;
