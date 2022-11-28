@@ -344,6 +344,8 @@ address {
 	width: 100%;
 	position: fixed;
 	z-index: 1;
+
+  
 }
 
 .nav-links a {
@@ -358,7 +360,6 @@ address {
 }
 .logo a {
 	display: flex;
-	align-items: baseline; 
 	color: var(--white);
 }
 
@@ -370,6 +371,9 @@ address {
 
 .logo img {
 	max-width: 90px;
+	display: flex;
+	align-items: center;
+	
 
 }
 /*responsive footer */
@@ -642,14 +646,6 @@ body {
 		flex-wrap: wrap;
 	}
 
-	.button {
-		width: 150px;
-		font-size: 16px;
-	}
-	#visit-btn {
-		width: 150px;
-		font-size: 16px;
-	}
 
 	.navbar .nav-btn {
     display: inline-block;
