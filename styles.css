@@ -255,7 +255,9 @@ address {
 
 .explore_hline {
 	font-size: 32px;
-	
+}
+.explore_hiline h2 {
+	color:var(--gold);
 }
 .explore_text_box {
 	display: flex;
