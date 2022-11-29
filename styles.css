@@ -231,9 +231,7 @@ address {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	
 }
-
 
 .explore {
 	background-color: var(--almostblack);
@@ -333,12 +331,64 @@ address {
 	margin: auto;
 }
 
-#visit_hrs_text {
+.visit_hrs_text {
  font-size: x-large;
  margin:  auto;
  padding: 5px;
  color: var(--white);
 }
+/* contact form*/
+
+form { 
+	max-width:420px; 
+}
+#contact_us {
+	width: 100%;
+
+}
+.feedback-input {
+  color:var(--white);
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: transparent;
+  border:1px solid var(--dblue);
+  transition: all 0.3s;
+	padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { 
+	border:1px solid var(--lblue);
+ }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  background:var(--gold);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:var(--white);
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+
+}
+[type="submit"]:hover { 
+	background:var(--lblue); 
+}
+
+
 
 
 
