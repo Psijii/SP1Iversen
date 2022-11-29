@@ -64,15 +64,16 @@ address {
 
 }
 .links {
-	color: var(--white);
+	color: var(--gold);
+	
 	font-weight: bold;
-	font-variant: small-caps;
+	
 }
 
 .links:hover {
 	text-decoration: underline solid transparent;
   transition: all 0.5s ease-in-out;
-	color: var(--gold);
+	color: var(--white);
 }
 
 .hero_index {
@@ -82,11 +83,9 @@ address {
 	margin: 0;
 }
 .hero_index_img {
-	background-image: linear-gradient(0deg, rgba(46, 80, 95, 1) 10%, rgba(0,0,0,0) 80%),  
-	url('images/hero_space.jpg');
-	background-image: -webkit-linear-gradient (0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
-	background-image: -moz-linear-gradient (0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
+	background-image: linear-gradient(0deg, rgba(46, 80, 95, 1) 10%, rgba(0,0,0,0) 80%), url('images/hero_space.jpg');
 }
+
 .hero_text {
 	text-align: center;
 	color: var(--white);
@@ -101,39 +100,29 @@ address {
 	border-radius: 5px;
 	margin-top: 10px;
 }
+
 .hero_involve_img {
-	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%), 
-	url('images/museumnight.jpg');
-	background-image: -webkit-linear-gradient (0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
-	background-image: -moz-linear-gradient (0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
+	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%), url('images/museumnight.jpg');
 	height: 300px;
 }
+
 .hero_exhibit_img {
-	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%), 
-	url('images/explore.jpg');
-	background-image: -webkit-linear-gradient (0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
-	background-image: -moz-linear-gradient (0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
+	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%), url('images/explore.jpg');
 	height: 300px;
 }
+
 .hero_visit_img {
-	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%),
-	 url('images/museumbuilding.JPG');
-	 background-image: -webkit-linear-gradient (0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
-	 background-image: -moz-linear-gradient (0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
+	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%), url('images/museumbuilding.JPG');
 	height: 300px;
 }
+
 .hero_explore_img {
-	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%), 
-	url('images/cosmos.jpg');
-	background-image: -webkit-linear-gradient (0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
-	background-image: -moz-linear-gradient (0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
+	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%), url('images/cosmos.jpg');
 	height: 300px;
 }
+
 .hero_event_img {
-	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%), 
-	url('images/museumevent.jpg');
-	background-image: -webkit-linear-gradient (0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
-	background-image: -moz-linear-gradient (0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
+	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%), url('images/museumevent.jpg');
 	height: 400px;
 }
 
@@ -151,8 +140,8 @@ address {
 	font-size: x-large;
 	text-align: center;
 	color: white;
-
 }
+
 .hero_explore {
 	background-image: url('images/vr.jpg');
 	height: 400px;
@@ -162,19 +151,14 @@ address {
 	margin-bottom: 10px;
 }
 
-
-
 /*events exhibitions etc */
 .exhibit_hlines h2 {
 	color: var(--gold);
 }
 
-
 .events_bg {
 	background-color: var(--dblue);
-
 }
-
 
 .gallery {
 	width: 300px;
@@ -196,11 +180,12 @@ address {
 	text-align: left;
 	font-size: large;
 	padding: 5px;
-	
 }
+
 .desc_text {
 	color: var(--white);
 }
+
 .photo {
 	height: 200px;
 	background-size: cover;
@@ -210,9 +195,11 @@ address {
 .prof_event_img {
 	background-image: url('images/spaceprof.jpg');
 }
+
 .energy_event_img {
 	background-image: url('images/energy.jpg');
 }
+
 .museum_night_event_img {
 	background-image: url('images/museumnight.jpg');
 }
@@ -224,6 +211,7 @@ address {
 	align-items: baseline;
 	justify-content: center;
 }
+
 .explore_scroll_bg,
 .headline_events {
 	background-image: url('images/stars.jpg');
@@ -298,8 +286,8 @@ address {
 .museum_info_bg {
 	background-color: var(--lblue);
 	height: auto;
-	
 }
+
 .museumopen {
 	width: 700px;
 	display: flex;
@@ -344,14 +332,14 @@ form {
 }
 #contact_us {
 	width: 100%;
-
 }
-.feedback-input {
+
+.feedback_input {
   color:var(--white);
-  font-size: 16px;
+
   border-radius: 5px;
   background-color: transparent;
-  border:1px solid var(--dblue);
+  border:1px solid var(--lblue);
   transition: all 0.3s;
 	padding: 13px;
   margin-bottom: 15px;
@@ -360,8 +348,8 @@ form {
   outline:0;
 }
 
-.feedback-input:focus { 
-	border:1px solid var(--lblue);
+.feedback_input:focus { 
+	border:1px solid var(--gold);
  }
 
 textarea {
@@ -382,21 +370,17 @@ textarea {
   padding-bottom: 10px;
   transition: all 0.3s;
   margin-top:-4px;
-
 }
+
 [type="submit"]:hover { 
 	background:var(--lblue); 
 }
 
-
-
-
-
 /*NAVBAR */
 .navbar #nav-check, .navbar .nav-btn {
 	display: none;
-	
 }
+
 .navbar {
 	display: flex;
 	align-items: center;
@@ -407,8 +391,6 @@ textarea {
 	width: 100%;
 	position: fixed;
 	z-index: 1;
-
-  
 }
 
 .nav-links a {
@@ -429,16 +411,14 @@ textarea {
 .logo a:hover {
 	color: var(--gold);
 	transition: all 0.3s ease-in-out;
-	
 }
 
 .logo img {
 	max-width: 90px;
 	display: flex;
 	align-items: center;
-	
-
 }
+
 /*responsive footer */
 footer {
 	bottom: 0;
@@ -450,7 +430,6 @@ footer {
 	width: 100%;
 	text-align: left;
 	padding: 50px;
-	
 }
 
 .footer_dist .footer_left,
@@ -572,15 +551,7 @@ footer {
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
-/*clear fix*/
 
-.clearfix::after {
-	content: " "; 
-	visibility: hidden;
-	display: block;
-	height: 0;
-	clear: both;
-}
 
 /*Media queries*/
 @media screen and 
@@ -623,8 +594,7 @@ body {
 	border-radius: 5px;
 	background-color: var(--dblue);
 	padding: 2px;
-	margin-top: 10px;
-	
+	margin-top: 10px;	
 }
 
  .footer_dist .footer_left,
@@ -686,18 +656,19 @@ body {
 		padding: 10px;
 	 }
 
-	#visit_hrs_text {
+	.visit_hrs_text {
 		font-size: 16px;
 		font-weight: bold;
 }
 	.museum_info {
 		display: flex;
 		flex-direction: column;
-
 	}
+
 	.photo { 
 		height: 133px;
 	 }
+
 	.desc { 
 		padding: 8px; 
 	}
@@ -709,27 +680,27 @@ body {
 		flex-wrap: wrap;
 	}
 
-
 	.navbar .nav-btn {
     display: inline-block;
     position: relative;
     top: 15px;
     left: 50px;
-		
-  }
+	}
+	
   .navbar .nav-btn label {
     display: inline-block;
     width: 20px;
     height: 50px;
-   
-  }
+	}
+	
   .navbar .nav-btn label span {
     display: block;
     height: 0.625rem;
     width: 1.5625rem;
 		border-top: 0.1875rem solid var(--white);
 		border-radius: 0.125rem;
-  }
+	}
+	
   .navbar .nav-links {
     position: absolute;
     display: block;
