@@ -75,13 +75,7 @@ address {
   transition: all 0.5s ease-in-out;
 	color: var(--white);
 }
-.change-icon > .fa-solid + .fa-solid,
-.change-icon:hover > .fa-solid {
-  display: none;
-}
-.change-icon:hover > .fa-solid + .fa-solid {
-  display: inherit;
-}
+
 .hero_index {
 	height: 950px;
   background-position: center;
@@ -145,7 +139,7 @@ address {
 .space_event {
 	font-size: x-large;
 	text-align: center;
-	color: white;
+	color: var(--white);
 }
 
 .hero_explore {
@@ -248,6 +242,7 @@ address {
 	flex-direction: column;
 	width: auto;
 }
+
 .explore_photo {
 	height: 100%;
 }
@@ -381,8 +376,97 @@ textarea {
 [type="submit"]:hover { 
 	background:var(--lblue); 
 }
+/*navbar test*/
+nav {
+  background: var(--dblue);
+  height: 80px;
+	width: 100%;
+	z-index:9999;
+}
+label.logo{
+  color: var(--gold);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a:hover{
+  transition: .5s;
+  color: #022f69;
+}
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 968px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 875px){
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 420px;
+    background: var(--dblue);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+		transition: all .5s;
+		z-index:9999;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover  {
+    color: var(--gold);
+	}
+	
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
 
-/*NAVBAR */
+
+
+
+/*NAVBAR 
 .navbar #nav-check, .navbar .nav-btn {
 	display: none;
 }
@@ -424,7 +508,7 @@ textarea {
 	display: flex;
 	align-items: center;
 }
-
+*/
 /*responsive footer */
 footer {
 	bottom: 0;
