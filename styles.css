@@ -75,7 +75,13 @@ address {
   transition: all 0.5s ease-in-out;
 	color: var(--white);
 }
-
+.change-icon > .fa-solid + .fa-solid,
+.change-icon:hover > .fa-solid {
+  display: none;
+}
+.change-icon:hover > .fa-solid + .fa-solid {
+  display: inherit;
+}
 .hero_index {
 	height: 950px;
   background-position: center;
