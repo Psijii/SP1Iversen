@@ -17,33 +17,20 @@
 	</head>
 
 <body>
-  <header>
-		<div class="navbar">
-		<!-- navbar logo -->
-			<div class="nav-header">
-				<div class="logo">
-					<a href="index.html">
-						<img src="images/logo.png" alt="SCI mu">&nbsp;<i class="fa-solid fa-house-chimney"></i><!--logo here-->
-						</a>
-					</div>
-				</div>
-		<!-- responsive navbar toggle button -->
-			<input type="checkbox" id="nav-check">
-				<div class="nav-btn">
-					<label for="nav-check">
-						<span></span>
-						<span></span>
-						<span></span>
-					</label>
-				</div>
-				<!-- navbar links -->
-				<div class="nav-links">
-					<a href="visit.html">VISIT</a>
-					<a href="explore.html">EXPLORE</a>
-					<a href="getinvolved.html">GET INVOLVED</a>
-					<a href="exhibitions.html">EXHIBITONS</a>
-				</div>
-			</div>
+	<header>
+		<nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars"></i>
+			</label>
+			<label class="logo">SCI mu</label>
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="explore.html">EXPLORE</a></li>
+				<li><a href="getinvolved.html">GET INVOLVED</a></li>
+				<li><a href="exhibitions.html">EXHIBITONS</a></li>
+			</ul>
+		</nav>
 		</header>
 <main>
 	<div class="hero_index hero_explore_img"><!--hero image-->
@@ -54,13 +41,14 @@
  </div>
 </div>
 <div class="container_index">
+
 	<div class="explore">
-		<div class="visit_content">
-			<img class="explore_photo visit_img" src="images/moonindex.jpg" alt="Moon">
-				<div class="visit_text_box">
-					<div class="desc_text">
-						<h2 class="explore_hline">Explore our wonderful cosmos</h2> 
-						<p>During whole December 2022 and January 2023 we closely follow NASA's <em>Artemis I</em> voyage to the Moon</p>
+		<div class="explore_research">
+		<img class="explore_photo explore_img" src="images/moonindex.jpg" alt="Astronaut">
+			<div class="explore_text_box">
+				<div class="desc_text">
+			<div class="exhibit_hlines"><h2>Explore our wonderful cosmos</h2></div>
+			<p>During whole December 2022 and January 2023 we closely follow NASA's <em>Artemis I</em> voyage to the Moon</p>
 						<p>Every week	we will have live update in our museum hall for everyone to see <em>Artemis I’s</em> voyage,
 							landing and exploration of the Moon.</p>
 							<p>With Artemis missions, NASA will land the first woman and first person of color on the Moon, 
@@ -73,10 +61,14 @@
 								universe and ourselves, giving visitors the chance to discover how different 
 								instruments work, find out about the people who made them, and examine models, 
 								illustrations and photographs.</p>
-						</div>
-					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</div>
+
+
+
 			<div class="explore">
 				<div class="visit_content">
 					<img class="explore_photo visit_img" src="images/spaceprof.jpg" alt="astronaut professor">

@@ -12,6 +12,12 @@
   color: var(--almostblack);
   background: var(--white);
  }
+ html { 
+	overflow:auto; 
+}
+body {
+	overflow: auto; 
+}
 /*bg styles etc */
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -19,7 +25,14 @@ body {
 	background-color: var(--dblue);
 	overflow-x: hidden;
 }
-
+img,
+div,
+form,
+input {
+	max-width: 100%;
+	border-radius: 5px;
+ 
+}
 a {
   text-decoration: none;
 }
@@ -38,20 +51,7 @@ address {
 	color: var(--white);
 
 }
-.btn {
-	background-color: var(--gold);
-	color: var(--white);
-	border-style: none;
-	border-radius: 5px;
-}
-#contact_btn {
-	font-size: 32px;
-	width: 160px;
-	margin: auto;
-}
-#visit-btn {
-	font-size: x-large;
-}
+
 .visit {
 	text-align: center;
 	position: absolute;
@@ -97,7 +97,6 @@ address {
 	align-items: baseline;
 	justify-content: center;
 	background-color: var(--dblue);
-	border-radius: 5px;
 	margin-top: 10px;
 }
 
@@ -189,7 +188,6 @@ address {
 .photo {
 	height: 200px;
 	background-size: cover;
-	border-radius: 5px;
 }
 
 .prof_event_img {
@@ -230,17 +228,11 @@ address {
 	margin-bottom: 10px;
 	display: flex;
 	flex-direction: row-reverse;
-	border-radius: 5px;
 }
 .explore_research {
 	display: flex;
 	flex-direction: column-reverse;
 	width: 100%;
-}
-.explore_research_text_box{
-	display: flex;
-	flex-direction: column;
-	width: auto;
 }
 
 .explore_photo {
@@ -250,17 +242,14 @@ address {
 .explore_img {
   transform: scaleX(-1);
 	object-fit: cover;
-	border-radius: 5px;
 	height: 200px;
 }
 
-.explore_hline {
-	font-size: 32px;
-}
 .explore_hiline h2 {
-	color:var(--gold);
+	color: var(--gold);
 }
-.explore_text_box {
+.explore_text_box,
+.explore_research_text_box {
 	display: flex;
 	flex-direction: column;
 	width: auto;
@@ -269,7 +258,6 @@ address {
 /*visit page */
 .visit_img {
 	object-fit: cover;
-	border-radius: 5px;
 	width: 300px;
 }
 .visit_content {
@@ -329,7 +317,7 @@ address {
 /* contact form*/
 
 form { 
-	max-width:420px; 
+	max-width: 420px; 
 }
 #contact_us {
 	width: 100%;
@@ -337,8 +325,6 @@ form {
 
 .feedback_input {
   color:var(--white);
-
-  border-radius: 5px;
   background-color: transparent;
   border:1px solid var(--lblue);
   transition: all 0.3s;
@@ -362,7 +348,6 @@ textarea {
 [type="submit"] {
   width: 100%;
   background:var(--gold);
-  border-radius:5px;
   border:0;
   cursor:pointer;
   color:var(--white);
@@ -385,83 +370,51 @@ nav {
 }
 label.logo{
   color: var(--gold);
-  font-size: 35px;
+  font-size: 56px;
   line-height: 80px;
   padding: 0 100px;
-  font-weight: bold;
+	font-family: 'Khand';
 }
-nav ul{
+
+nav ul {
   float: right;
   margin-right: 20px;
 }
-nav ul li{
+
+nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
-nav ul li a{
-  color: #fff;
-  font-size: 17px;
+
+nav ul li a {
+  color: var(--white);
+  font-size: x-large;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
+
 a:hover{
   transition: .5s;
-  color: #022f69;
+  color: var(--gold);
+	text-decoration: solid underline 2px;
 }
+
 .checkbtn {
   font-size: 30px;
-  color: #fff;
+  color: var(--white);
   float: right;
   line-height: 80px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
 }
-#check{
+
+#check {
   display: none;
 }
-@media (max-width: 968px){
-  label.logo{
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
-}
-@media (max-width: 875px){
-  .checkbtn{
-    display: block;
-  }
-  nav ul{
-    position: fixed;
-    width: 100%;
-    height: 420px;
-    background: var(--dblue);
-    top: 80px;
-    left: -100%;
-    text-align: center;
-		transition: all .5s;
-		z-index:9999;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover  {
-    color: var(--gold);
-	}
-	
-  #check:checked ~ ul {
-    left: 0;
-  }
-}
+
 
 
 
@@ -569,12 +522,10 @@ footer {
 }
 
 .footer_dist .footer_cent i {
-	background-color:  var(--almostblack);
 	color: var(--white);
 	font-size: 25px;
 	width: 38px;
 	height: 38px;
-	border-radius: 50%;
 	text-align: center;
 	line-height: 42px;
 	margin: 10px 15px;
@@ -651,12 +602,64 @@ footer {
 (max-width:961px),
 (max-width:1025px) {
 
+	img,
+	div,
+	form,
+	input {
+		max-width: 100%;
+		border-radius: 5px;
+	}
+
+  .checkbtn{
+    display: block;
+  }
+
+	label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+		font-family: 'Khand';
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: var(--dblue);
+    top: 80px;
+    left: -900px;
+    text-align: center;
+		transition: all .5s;
+		z-index: 9999;
+		margin: auto;
+  }
+	
+  nav ul li{
+    display: block;
+    margin: 20px;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover  {
+    color: var(--gold);
+	}
+	
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+
+
+
 body {
 	background-color: var(--dblue);
 }
 .visit_img {
 	object-fit: cover;
-	border-radius: 5px;
 	width: 100px;
 	height: 100px;
 }
@@ -670,10 +673,10 @@ body {
 	flex-direction: column;
 	text-align: justify;
 }
-
-.maploc {
-	width: 350px;
+.explore {
+	min-width: 100%;
 }
+
 .hero_text {
 	text-align: center;
 	color: var(--white);
@@ -681,7 +684,6 @@ body {
 }
 .hero_text_exhibit h1 {
 	width: auto;
-	border-radius: 5px;
 	background-color: var(--dblue);
 	padding: 2px;
 	margin-top: 10px;	
@@ -734,7 +736,6 @@ body {
 	.explore_photo {
 		transform: scaleX(-1);
 		object-fit: cover;
-		border-radius: 5px;
 		width: 100%;
 	
 }
@@ -769,7 +770,7 @@ body {
 		height: auto;
 		flex-wrap: wrap;
 	}
-
+/*
 	.navbar .nav-btn {
     display: inline-block;
     position: relative;
@@ -825,5 +826,5 @@ body {
     margin: 1.25rem;
 		font-size: 1rem;
 		color: var(--white);
-  }
+  } */
 }
