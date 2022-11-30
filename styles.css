@@ -2,22 +2,23 @@
 :root {
 	--dblue: #1C3240;
 	--gold: #D9A443;
-	--lgreen: #7A8C68;
 	--lblue: #2E505F;
 	--white: #F5F8F0;
-	--purple: #2F1A34;
 	--almostblack: #01080D;
- }
+ 
+}
  ::selection {
   color: var(--almostblack);
   background: var(--white);
  }
+/*removes unremovable overflow in responsive mode*/
  html { 
 	overflow:auto; 
 }
 body {
 	overflow: auto; 
 }
+
 /*bg styles etc */
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -30,26 +31,24 @@ div,
 form,
 input {
 	max-width: 100%;
-	border-radius: 5px;
- 
+	border-radius: 5px; 
 }
-a {
+
+a,
+h1,
+address {
   text-decoration: none;
+	color: var(--white);
 }
 
 li {
 	list-style: none;
 	padding-bottom: 5px;
 }
-h1 {
-	color: var(--white);
-}
-h2 {
-	color: var(--gold);
-}
-address {
-	color: var(--white);
 
+h2,
+label {
+	color: var(--gold);
 }
 
 .visit {
@@ -61,19 +60,20 @@ address {
 	color: var(--white);
 	width: 300px;
 	margin: auto;
-
 }
+
 .links {
 	color: var(--gold);
-	
 	font-weight: bold;
-	
 }
 
 .links:hover {
 	text-decoration: underline solid transparent;
   transition: all 0.5s ease-in-out;
 	color: var(--white);
+}
+.active_link_page {
+	color: var(--gold);
 }
 
 .hero_index {
@@ -155,10 +155,6 @@ address {
 	color: var(--gold);
 }
 
-.events_bg {
-	background-color: var(--dblue);
-}
-
 .gallery {
 	width: 300px;
 	margin: 8px;
@@ -189,8 +185,6 @@ address {
 	height: 200px;
 	background-size: cover;
 }
-/*images */
-
 
 .prof_event_img {
 	background-image: url('images/spaceprof.jpg');
@@ -200,14 +194,9 @@ address {
 	background-image: url('images/energy.jpg');
 }
 
-.museum_night_event_img {
+.museum_night_event_index_img {
 	background-image: url('images/museumnight.jpg');
 }
-
-.prof_explore_img {
-	background-image: url();
-}
-
 
 
 /*explore the world of science */
@@ -225,6 +214,7 @@ address {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding: 10px;
 }
 
 .explore {
@@ -377,7 +367,6 @@ nav {
 	z-index:9999;
 }
 label.logo{
-  color: var(--gold);
   font-size: 56px;
   line-height: 80px;
   padding: 0 100px;
@@ -502,7 +491,7 @@ footer {
 }
 
 .footer_dist .footer_links {
-	color:  #ffffff;
+	color:  var(--white);
 	margin: 20px 0 12px;
 }
 
@@ -519,7 +508,7 @@ footer {
 }
 
 .footer_dist .footer_logo{
-	color:  #8f9296;
+	color:  var(--lblue);
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -787,61 +776,4 @@ body {
 		height: auto;
 		flex-wrap: wrap;
 	}
-/*
-	.navbar .nav-btn {
-    display: inline-block;
-    position: relative;
-    top: 15px;
-    left: 50px;
-	}
-	
-  .navbar .nav-btn label {
-    display: inline-block;
-    width: 20px;
-    height: 50px;
-	}
-	
-  .navbar .nav-btn label span {
-    display: block;
-    height: 0.625rem;
-    width: 1.5625rem;
-		border-top: 0.1875rem solid var(--white);
-		border-radius: 0.125rem;
-	}
-	
-  .navbar .nav-links {
-    position: absolute;
-    display: block;
-    text-align: center;
-    width: 100%;
-    background-color: var(--dblue);
-    overflow-y: hidden;
-    top: 70px;
-		right: 10px;
-		transition: all 0.5s ease-in-out;
-		margin: 0; 
-		padding: 5px;
-	}
-
-  .navbar .nav-links a {
-		display: block;
-		padding: 0.625rem;
-	
-  }
-   .navbar #nav-check:not(:checked) ~ .nav-links {
-		height: 0px;
-  }
- 
-  .navbar #nav-check:checked ~ .nav-links {
-		height: 200px;
-		top: 30px;
-		width: 100%;
-	}
-	
-  .navbar .nav-links  {
-    padding: 0;
-    margin: 1.25rem;
-		font-size: 1rem;
-		color: var(--white);
-  } */
 }
