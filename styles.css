@@ -198,8 +198,7 @@ label {
 	background-image: url('images/museumnight.jpg');
 }
 
-
-/*explore the world of science */
+/*explore page*/
 .headline_events {
 	color: var(--white);
 	display: flex;
@@ -359,12 +358,13 @@ textarea {
 [type="submit"]:hover { 
 	background:var(--lblue); 
 }
-/*navbar test*/
+/*navbar*/
 nav {
   background: var(--dblue);
   height: 80px;
 	width: 100%;
 	z-index:9999;
+	position: fixed;
 }
 label.logo{
   font-size: 56px;
@@ -412,53 +412,6 @@ a:hover{
   display: none;
 }
 
-
-
-
-
-/*NAVBAR 
-.navbar #nav-check, .navbar .nav-btn {
-	display: none;
-}
-
-.navbar {
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	background-color: var(--dblue);
-	height: 60px;
-	font-size: x-large;
-	width: 100%;
-	position: fixed;
-	z-index: 1;
-}
-
-.nav-links a {
-	color: var(--white);
-	padding: 10px;
-}
-
-.nav-links a:hover {
-	text-decoration: underline solid transparent;
-	color: var(--gold);
-	transition: all 0.9s ease-in-out;
-}
-.logo a {
-	display: flex;
-	color: var(--white);
-}
-
-.logo a:hover {
-	color: var(--gold);
-	transition: all 0.3s ease-in-out;
-}
-
-.logo img {
-	max-width: 90px;
-	display: flex;
-	align-items: center;
-}
-*/
 /*responsive footer */
 footer {
 	bottom: 0;
@@ -636,7 +589,6 @@ footer {
 		transition: all .5s;
 		z-index: 9999;
 		margin: auto;
-
   }
 	
   nav ul li{
@@ -653,47 +605,40 @@ footer {
 	
   #check:checked ~ ul {
     left: 0;
-  }
+	}
 
+	.visit_img {
+		object-fit: cover;
+		width: 100px;
+		height: 100px;
+	}
+	.visit_content {
+		display: flex;
+		flex-direction: row-reverse;
+		width: auto;
+	}
+	.visit_text_box {
+		display: flex;
+		flex-direction: column;
+		text-align: justify;
+	}
+	.explore {
+		min-width: 100%;
+	}
 
-
-
-body {
-	background-color: var(--dblue);
-}
-.visit_img {
-	object-fit: cover;
-	width: 100px;
-	height: 100px;
-}
-.visit_content {
-	display: flex;
-	flex-direction: row-reverse;
-	width: auto;
-}
-.visit_text_box {
-	display: flex;
-	flex-direction: column;
-	text-align: justify;
-}
-.explore {
-	min-width: 100%;
-}
-
-.hero_text {
-	text-align: center;
-	color: var(--white);
-	
-}
-.hero_text_exhibit h1 {
-	width: auto;
-	padding: 2px;
-	font-size: 20px;
-}
-.hero_text_exhibit {
-	margin-top: 60px;
-}
-
+	.hero_text {
+		text-align: center;
+		color: var(--white);
+		
+	}
+	.hero_text_exhibit h1 {
+		width: auto;
+		padding: 2px;
+		font-size: 20px;
+	}
+	.hero_text_exhibit {
+		margin-top: 60px;
+	}
 
  .footer_dist .footer_left,
  .footer_dist .footer_cent,
@@ -744,7 +689,7 @@ body {
 		object-fit: cover;
 		width: 100%;
 	
-}
+	}
 	.explore,
 	.gallery {
 		display: flex;
@@ -756,7 +701,7 @@ body {
 	.visit_hrs_text {
 		font-size: 16px;
 		font-weight: bold;
-}
+	}
 	.museum_info {
 		display: flex;
 		flex-direction: column;
