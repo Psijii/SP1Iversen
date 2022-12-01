@@ -5,7 +5,6 @@
 	--lblue: #2E505F;
 	--white: #F5F8F0;
 	--almostblack: #01080D;
- 
 }
  ::selection {
   color: var(--almostblack);
@@ -98,7 +97,7 @@ label {
 	align-items: baseline;
 	justify-content: center;
 	background-color: var(--dblue);
-	margin-top: 35px;
+	
 }
 
 .hero_involve_img {
@@ -681,6 +680,7 @@ footer {
 		display: flex;
 		flex-direction: column;
 		font-size: 18px;
+	
 }
 
 	.headline_events,
