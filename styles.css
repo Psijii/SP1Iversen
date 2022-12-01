@@ -98,7 +98,7 @@ label {
 	align-items: baseline;
 	justify-content: center;
 	background-color: var(--dblue);
-	margin-top: 10px;
+	margin-top: 35px;
 }
 
 .hero_involve_img {
@@ -553,7 +553,13 @@ footer {
 (max-width:641px),
 (max-width:961px),
 (max-width:1025px) {
-
+.explore,
+.visit_content,
+.visit_text_box
+.desc_text {
+	display: flex;
+	flex-direction: column;
+}
 	img,
 	div,
 	form,
@@ -639,7 +645,7 @@ footer {
 		font-size: 20px;
 	}
 	.hero_text_exhibit {
-		margin-top: 35px;
+		margin-top: 60px;
 	}
 
  .footer_dist .footer_left,
