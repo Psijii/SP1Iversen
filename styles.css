@@ -12,13 +12,13 @@
   background: var(--white);
  }
 /*removes unremovable overflow in responsive mode*/
- html { 
+ /*html { 
 	overflow:auto; 
 }
 body {
 	overflow: auto; 
 }
-
+*/
 /*bg styles etc */
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +29,8 @@ body {
 img,
 div,
 form,
-input {
+input,
+textarea {
 	max-width: 100%;
 	border-radius: 5px; 
 }
@@ -220,6 +221,7 @@ label {
 	background-color: var(--almostblack);
 	margin: auto;
 	width: 950px;
+	min-width: 230px;
 	height: auto;
 	padding: 10px;
 	margin-bottom: 10px;
