@@ -34,6 +34,8 @@ input,
 textarea {
 	max-width: 100%;
 	border-radius: 5px; 
+	color: var(--white);
+	
 }
 
 h1,
@@ -68,7 +70,6 @@ a:hover {
 	top: 35%;
 	left: 90%;
 	transform: translate(-65%, -15%);
-	color: var(--white);
 	width: 300px;
 	margin: auto;
 }
@@ -85,11 +86,10 @@ a:hover {
 
 .hero_text {
 	text-align: center;
-	color: var(--white);
 	font-size: xx-large;
 }
+
 .hero_text_exhibit {
-	color: var(--white);
 	display: flex;
 	align-items: baseline;
 	justify-content: center;
@@ -136,6 +136,7 @@ a:hover {
 	font-size: x-large;
 	text-align: center;
 	color: var(--white);
+	
 }
 
 
@@ -164,19 +165,17 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	margin: auto;
-	color: var(--white);
 	padding-top: 10px;
 }
 
 .desc_headline {
-	color: var(--white);
 	text-align: left;
 	font-size: large;
 	padding: 5px;
 }
 
 .desc_text {
-	color: var(--white);
+	width: auto;
 }
 
 .photo {
@@ -198,10 +197,10 @@ a:hover {
 
 /*explore page*/
 .headline_events {
-	color: var(--white);
 	display: flex;
 	align-items: baseline;
 	justify-content: center;
+	color: var(--white);
 }
 
 .explore_scroll_bg,
@@ -288,7 +287,6 @@ a:hover {
 	display: flex;
 	padding: 10px;
 	height: auto;
-	color: var(--white);
 	width: 350px;
 	flex-direction: column;
 }
@@ -309,7 +307,7 @@ a:hover {
  font-size: x-large;
  margin:  auto;
  padding: 5px;
- color: var(--white);
+ color: inherit;
 }
 /* contact form*/
 
@@ -321,7 +319,7 @@ form {
 }
 
 .feedback_input {
-  color:var(--white);
+  color: inherit;
   background-color: transparent;
   border:1px solid var(--lblue);
   transition: all 0.3s;
@@ -344,10 +342,10 @@ textarea {
 
 [type="submit"] {
   width: 100%;
-  background: var(--gold);
+  background: var(--white);
   border: 0;
   cursor: pointer;
-  color: var(--white);
+  color: var(--dblue);
   font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -357,8 +355,11 @@ textarea {
 
 [type="submit"]:hover { 
 	background:var(--lblue); 
+	color: var(--white);
+	transition: .5s;
 }
 
+/*navbar*/
 
 .container_navbar {
   background-color: var(--dblue);
@@ -427,6 +428,7 @@ footer {
 .footer_dist .footer_left {
 	width: 30%;
 }
+
 .footer_dist .footer_left img {
 	width: 30%;
 }
@@ -436,7 +438,6 @@ footer {
 }
 
 .footer_dist .footer_links {
-	color:  var(--white);
 	margin: 20px 0 12px;
 }
 
@@ -444,7 +445,7 @@ footer {
 	display:inline-block;
 	line-height: 1.8;
 	text-decoration: none;
-	color:  inherit;
+	font-weight: 100;
 }
 .footer_links a:hover {
 	text-decoration: underline solid transparent;
@@ -478,13 +479,14 @@ footer {
 .footer_cent {
 	font-size: 16px;
 	line-height: 38px;
+	
 }
 
 .footer_dist .footer_cent p {
 	display: inline-block;
 	color: var(--white);
 	vertical-align: middle;
-	margin:0;
+	margin: 0;
 }
 
 .footer_dist .footer_cent p span {
@@ -497,6 +499,7 @@ footer {
 .footer_dist .footer_cent p a {
 	color:  var(--gold);
 	text-decoration: none;
+	font-weight: 100;
 }
 
 .footer_dist .footer_right {
@@ -507,7 +510,7 @@ footer {
 	line-height: 20px;
 	color:  var(--gold);
 	font-size: 16px;
-	font-weight: normal;
+	font-weight: 100;
 	margin: 0;
 }
 
@@ -528,7 +531,6 @@ footer {
 	width: 35px;
 	height: 35px;
 	font-size: 20px;
-	color: var(--white);
 	text-align: center;
 	line-height: 35px;
 	margin-right: 3px;
@@ -642,6 +644,7 @@ footer {
 		flex-direction: column-reverse;
 		width: 100%;
 	}
+
 	.museum_info_hrs,
 	.museumopen {
 		display: flex;
@@ -649,15 +652,16 @@ footer {
 		align-items: baseline;
 		width: 100%;
 	}
+
 	.hero_index {
 		height: 340px;
 	}
+
 	.headline_box {
 		width: 300px;
 		display: flex;
 		flex-direction: column;
 		font-size: 18px;
-	
 }
 
 	.headline_events,
@@ -665,16 +669,18 @@ footer {
 	.container_index  {
 		padding: 3px;
 	}
+
 	.headline_events h2 {
 		padding: 5px;
 	}
+
 	.explore_img
 	.explore_photo {
 		transform: scaleX(-1);
 		object-fit: cover;
 		width: 100%;
-	
 	}
+
 	.explore,
 	.gallery {
 		display: flex;
