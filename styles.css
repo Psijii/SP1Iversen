@@ -121,7 +121,10 @@ a:hover {
 	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%), url('images/museumevent.jpg');
 	height: 400px;
 }
-
+.hero_tickets_img {
+	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%), url('images/tickets.jpg');
+	height: 400px;
+}
 .headline_box {
 	width: 480px;
 	height: 250px;
@@ -369,10 +372,12 @@ textarea {
 	position: fixed;
 	top: 0;
 	z-index: 9999;
+	
 }
 .row_navbar {
   width: 80%;
   margin: auto;
+	
 }
 
 .logo a {
@@ -386,11 +391,13 @@ textarea {
   justify-content: space-between;
   height: 50px;
   align-items: center;
+	
 }
 
 .navbar .main-menu {
   display: flex;
 	padding-top: 8px;
+	
 }
 
 .main-menu li a {
@@ -407,7 +414,98 @@ li a:hover {
 .menu-btn {
   display: none;
 }
+/*ticket orering form*/
+.form {
+	width: 650px;
+	margin: auto;
+	background-color: var(--almostblack);
+}
 
+.form-text {
+	text-align: center;
+	margin: 0 0 40px 0;
+}
+
+.form-text h1 span img {
+	margin: 0 10px;
+
+}
+.form-text h1 {
+	color: var(--white);
+	margin-bottom: 20px;
+}
+.form-text p {
+	color: var(--white);
+}
+
+.main-form div {
+	margin: 10px 10px;
+	width: 300px;
+	display: inline-block;
+}
+
+.main-form div input {
+	width: 100%;
+	background: var(--dblue);
+	border: 1px solid var(--lblue);
+	color: var(--white);
+	outline: none;
+	padding: 3px 0 3px 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.main-form input:focus {
+	border: 1px solid var(--gold);
+}
+
+.main-form div select {
+	width: 100%;
+	background: var(--dblue);
+	border: 1px solid var(--lblue);
+	color: var(--white);
+	outline: none;
+	padding: 3px 0 3px 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.main-form select:focus {
+	border: 1px solid var(--gold);
+}
+.main-form div span {
+	width: 100%;
+	color: var(--white);
+
+}
+
+#submit {
+	width: 100%;
+	text-align: center;
+	border: none;
+}
+#submit input {
+	width: 200px;
+	background-color: var(--lblue);
+	color: var(--white);
+	transition: all .3s;
+}
+#submit input:hover {
+	width: 200px;
+	background-color: var(--white);
+	color: var(--dblue) 
+}
+#submit input:active {
+	background-color: var(--dblue);
+	color: var(--white);
+}
+
+
+@media screen and (max-width:710px) {
+	.main-form{
+			text-align: center;
+	}
+}
 
 /*responsive footer */
 footer {
@@ -545,7 +643,8 @@ footer {
 /*Media query*/
 @media screen and 
 (max-width:768px),
-(max-width: 1024px) {
+(max-width: 1024px),
+(max-width: 900px) {
 
 .explore,
 .visit_text_box
