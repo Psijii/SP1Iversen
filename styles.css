@@ -11,13 +11,13 @@
   background: var(--white);
  }
 /*removes unremovable overflow in responsive mode*/
- html { 
+ /*html { 
 	overflow:auto; 
 }
 
 body {
 	overflow: auto; 
-}
+}*/
 
 /*bg styles etc */
 body {
@@ -176,6 +176,7 @@ a:hover {
 
 .desc_text {
 	width: auto;
+	padding: 5px;
 }
 
 .photo {
@@ -237,7 +238,7 @@ a:hover {
 .explore_img {
   transform: scaleX(-1);
 	object-fit: cover;
-	height: 200px;
+	height: 330px;
 }
 
 .explore_hiline h2 {
@@ -254,7 +255,7 @@ a:hover {
 /*visit page */
 .visit_img {
 	object-fit: cover;
-	width: 300px;
+	width: 330px;
 }
 .visit_content {
 	display: flex;
@@ -312,16 +313,16 @@ a:hover {
 /* contact form*/
 
 form { 
-	max-width: 420px; 
+	width: 100%;
 }
 #contact_us {
 	width: 100%;
 }
 
 .feedback_input {
-  color: inherit;
-  background-color: transparent;
-  border:1px solid var(--lblue);
+  color: var(--white);
+  background-color: var(--lblue);
+  border:1px solid var(--dblue);
   transition: all 0.3s;
 	padding: 13px;
   margin-bottom: 15px;
@@ -338,6 +339,7 @@ textarea {
   height: 150px;
   line-height: 150%;
   resize:vertical;
+	
 }
 
 [type="submit"] {
@@ -388,7 +390,9 @@ textarea {
 
 .navbar .main-menu {
   display: flex;
+	padding-top: 8px;
 }
+
 .main-menu li a {
   display: inline-block;
   padding: 10px 20px;
@@ -543,7 +547,24 @@ footer {
 (max-width:768px),
 (max-width: 1024px) {
 
-  .main-menu {
+.explore,
+.visit_text_box
+.desc_text {
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	}
+
+	img,
+	div,
+	form,
+	input,
+	iframe {
+		max-width: 100%;
+		border-radius: 5px;
+	}
+
+	.main-menu {
     position: absolute;
     top: 40px;
     left: 0;
@@ -555,9 +576,8 @@ footer {
     transition: 0.5s all ease;
     display: none;
     align-items: center;
-    transform: translateX(-800px);
+    transform: translateX(-1200px);
 		z-index: 9999;
-		
 	}
 
   .main-menu.show {
@@ -565,10 +585,12 @@ footer {
     transition: 0.5s all ease;
 		padding: 0;
   }
+
   .main-menu li a {
     margin-bottom: 10px;
     display: block;
   }
+
   .menu-btn {
     display: block;
     position: absolute;
@@ -578,38 +600,10 @@ footer {
     font-size: 2rem;
   }
 
-.explore,
-.visit_content,
-.visit_text_box
-.desc_text {
-	display: flex;
-	flex-direction: column;
-}
-	img,
-	div,
-	form,
-	input {
-		max-width: 100%;
-		border-radius: 5px;
-	}
-
-	.visit_img {
-		object-fit: cover;
-		width: 100px;
-		height: 100px;
-	}
 	.visit_content {
 		display: flex;
 		flex-direction: row-reverse;
 		width: auto;
-	}
-	.visit_text_box {
-		display: flex;
-		flex-direction: column;
-		text-align: justify;
-	}
-	.explore {
-		min-width: 100%;
 	}
 
 	.hero_text {
@@ -639,10 +633,10 @@ footer {
 	 margin-left: 0;
  }
 	.explore_research,
-	.explore{
+	.explore {
 		display: flex;
 		flex-direction: column-reverse;
-		width: 100%;
+		min-width: 100%;
 	}
 
 	.museum_info_hrs,
@@ -665,17 +659,20 @@ footer {
 }
 
 	.headline_events,
-	.events_bg,
-	.container_index  {
+	.events_bg  {
 		padding: 3px;
 	}
 
+ .container_index {
+		padding: 20px;
+ 	}
 	.headline_events h2 {
 		padding: 5px;
 	}
 
-	.explore_img
-	.explore_photo {
+	.explore_img,
+	.explore_photo,
+	.visit_img {
 		transform: scaleX(-1);
 		object-fit: cover;
 		width: 100%;
@@ -696,14 +693,6 @@ footer {
 	.museum_info {
 		display: flex;
 		flex-direction: column;
-	}
-
-	.photo { 
-		height: 133px;
-	 }
-
-	.desc { 
-		padding: 8px; 
 	}
 
 	.gallerybg {
