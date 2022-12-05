@@ -18,19 +18,24 @@
 
 <body>
 	<header>
-		<nav>
-			<input type="checkbox" id="check">
-			<label for="check" class="checkbtn">
-				<i class="fas fa-bars"></i>
-			</label>
-			<label class="logo"><a class="active_link_page" href="index.html">SCI mu</a></label>
-			<ul>
-				<li><a class="active_link_page" href="visit.html">VISIT</a></li>
-				<li><a href="explore.html">EXPLORE</a></li>
-				<li><a href="getinvolved.html">GET INVOLVED</a></li>
-				<li><a href="exhibitions.html">EXHIBITONS</a></li>
-			</ul>
-		</nav>
+		<div class="container_navbar">
+			<div class="row_navbar">
+				<div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+				<nav class="navbar">
+					<div class="logo"><a href="index.html">SCImu</a></div>
+					<ul class="main-menu">
+						<li class="list-items"><a href="visit.html">VISIT</a></li>
+						<li class="list-items"><a href="explore.html">EXPLORE</a></li>
+						<li class="list-items"><a href="getinvolved.html">GET INVOLVED</a></li>
+						<li class="list-items"><a href="exhibitions.html">EXHIBITONS</a></li>
+					</ul>
+				</nav>
+			</div>
+			<script>document.querySelector(".menu-btn").addEventListener("click", abc);
+				function abc() {
+					document.querySelector(".main-menu").classList.toggle("show");
+				}
+				</script>
 		</header>
 	
     <div class="hero_index hero_visit_img"><!--hero image-->
@@ -42,8 +47,8 @@
     </div>
   <main class="container_index">
     <div class="explore">
-      <div class="visit_content">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d930.4078150715048!2d5.32164116873387!3d60.38799243447874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfc01e184b9e7%3A0x5ac9d01106c93f48!2sUniversitetsmuseet%20i%20Bergen%20-%20Naturhistorie!5e0!3m2!1sno!2sno!4v1669885873355!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391.1920201790864!2d5.321544822584416!3d60.387686635315944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfc01e184b9e7%3A0x5ac9d01106c93f48!2sUniversitetsmuseet%20i%20Bergen%20-%20Naturhistorie!5e0!3m2!1sno!2sno!4v1670228121599!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         <div class="visit_text_box">
           <div class="desc_text">
         <h2 class="explore_hline">Our location</h2>
@@ -110,7 +115,7 @@
 	<!--footer starts here-->
 	<footer class="footer_dist">
 		<div class="footer_left">
-			<label class="logo">SCI mu</label>
+			<div class="logo"><a href="index.html">SCImu</a></div>
 				<p class="footer_links">
 				<a href="index.html"><i class="fa-solid fa-house-chimney"></i></a> | <a href="visit.html">VISIT</a> | <a href="explore.html">EXPLORE</a> | <a href="visit.html#contact_us">CONTACT</a></p>
 			<p class="footer_logo">© 2022 SCI mu </p></div>

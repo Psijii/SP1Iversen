@@ -18,19 +18,24 @@
 
 <body>
 	<header>
-		<nav>
-			<input type="checkbox" id="check">
-			<label for="check" class="checkbtn">
-				<i class="fas fa-bars"></i>
-			</label>
-			<label class="logo"><a class="active_link_page" href="index.html">SCI mu</a></label>
-			<ul>
-				<li><a href="visit.html">VISIT</a></li>
-				<li><a href="explore.html">EXPLORE</a></li>
-				<li><a class="active_link_page" href="getinvolved.html">GET INVOLVED</a></li>
-				<li><a href="exhibitions.html">EXHIBITONS</a></li>
-			</ul>
-		</nav>
+		<div class="container_navbar">
+			<div class="row_navbar">
+				<div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+				<nav class="navbar">
+					<div class="logo"><a href="index.html">SCImu</a></div>
+					<ul class="main-menu">
+						<li class="list-items"><a href="visit.html">VISIT</a></li>
+						<li class="list-items"><a href="explore.html">EXPLORE</a></li>
+						<li class="list-items"><a href="getinvolved.html">GET INVOLVED</a></li>
+						<li class="list-items"><a href="exhibitions.html">EXHIBITONS</a></li>
+					</ul>
+				</nav>
+			</div>
+			<script>document.querySelector(".menu-btn").addEventListener("click", abc);
+				function abc() {
+					document.querySelector(".main-menu").classList.toggle("show");
+				}
+				</script>
 		</header>
 <main>
 	<div class="hero_index hero_involve_img"><!--index page main image-->

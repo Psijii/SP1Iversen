@@ -14,6 +14,7 @@
  html { 
 	overflow:auto; 
 }
+
 body {
 	overflow: auto; 
 }
@@ -25,6 +26,7 @@ body {
 	background-color: var(--dblue);
 	overflow-x: hidden;
 }
+
 img,
 div,
 form,
@@ -34,23 +36,32 @@ textarea {
 	border-radius: 5px; 
 }
 
-a,
 h1,
 address {
   text-decoration: none;
 	color: var(--white);
 }
 
-li {
+li, 
+ul {
 	list-style: none;
 	padding-bottom: 5px;
 }
 
-h2,
-label {
+h2 {
 	color: var(--gold);
 }
+a {
+	color: var(--white);
+	text-decoration: none;
+	font-weight: bold;
+}
 
+a:hover {
+	text-decoration: underline solid transparent;
+  transition: all 0.5s ease-in-out;
+	color: var(--gold);
+}
 .visit {
 	text-align: center;
 	position: absolute;
@@ -60,20 +71,6 @@ label {
 	color: var(--white);
 	width: 300px;
 	margin: auto;
-}
-
-.links {
-	color: var(--gold);
-	font-weight: bold;
-}
-
-.links:hover {
-	text-decoration: underline solid transparent;
-  transition: all 0.5s ease-in-out;
-	color: var(--white);
-}
-.active_link_page {
-	color: var(--gold);
 }
 
 .hero_index {
@@ -140,6 +137,7 @@ label {
 	text-align: center;
 	color: var(--white);
 }
+
 
 .hero_explore {
 	background-image: url('images/vr.jpg');
@@ -246,6 +244,7 @@ label {
 .explore_hiline h2 {
 	color: var(--gold);
 }
+
 .explore_text_box,
 .explore_research_text_box {
 	display: flex;
@@ -345,73 +344,65 @@ textarea {
 
 [type="submit"] {
   width: 100%;
-  background:var(--gold);
-  border:0;
-  cursor:pointer;
-  color:var(--white);
+  background: var(--gold);
+  border: 0;
+  cursor: pointer;
+  color: var(--white);
   font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
   transition: all 0.3s;
-  margin-top:-4px;
+  margin-top: -4px;
 }
 
 [type="submit"]:hover { 
 	background:var(--lblue); 
 }
-/*navbar*/
-nav {
-  background: var(--dblue);
-  height: 80px;
+
+
+.container_navbar {
+  background-color: var(--dblue);
 	width: 100%;
-	z-index:9999;
 	position: fixed;
+	top: 0;
+	z-index: 9999;
 }
-label.logo{
-  font-size: 56px;
-  line-height: 80px;
-  padding: 0 100px;
+.row_navbar {
+  width: 80%;
+  margin: auto;
+}
+
+.logo a {
+  font-size: 36px;
 	font-family: 'Khand';
+	color: var(--gold);
 }
 
-nav ul {
-  float: right;
-  margin-right: 20px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
 }
 
-nav ul li {
+.navbar .main-menu {
+  display: flex;
+}
+.main-menu li a {
   display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
+  padding: 10px 20px;
+	font-size: x-large;
+	font-weight: 100;
 }
-
-nav ul li a {
-  color: var(--white);
-  font-size: x-large;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
-
-a:hover{
+li a:hover {
   transition: .5s;
   color: var(--gold);
 	text-decoration: solid underline 2px;
 }
-
-.checkbtn {
-  font-size: 30px;
-  color: var(--white);
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
+.menu-btn {
   display: none;
 }
 
-#check {
-  display: none;
-}
 
 /*responsive footer */
 footer {
@@ -545,13 +536,46 @@ footer {
 }
 
 
-/*Media queries*/
+/*Media query*/
 @media screen and 
-(max-width:375px),
-(max-width:481px),
-(max-width:641px),
-(max-width:961px),
-(max-width:1025px) {
+(max-width:768px),
+(max-width: 1024px) {
+
+  .main-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+		margin: auto;
+    width: 100%;
+    height: auto;
+		background-color: var(--dblue);
+    flex-direction: column;
+    transition: 0.5s all ease;
+    display: none;
+    align-items: center;
+    transform: translateX(-800px);
+		z-index: 9999;
+		
+	}
+
+  .main-menu.show {
+    transform: translateX(0px);
+    transition: 0.5s all ease;
+		padding: 0;
+  }
+  .main-menu li a {
+    margin-bottom: 10px;
+    display: block;
+  }
+  .menu-btn {
+    display: block;
+    position: absolute;
+    color: var(--white);
+    top: 10px;
+    right: 30px;
+    font-size: 2rem;
+  }
+
 .explore,
 .visit_content,
 .visit_text_box
@@ -565,53 +589,6 @@ footer {
 	input {
 		max-width: 100%;
 		border-radius: 5px;
-	}
-
-	nav {
-		position: fixed;
-	}
-  .checkbtn{
-    display: block;
-  }
-
-	label.logo{
-    font-size: 30px;
-    padding-left: 50px;
-		font-family: Arial, Helvetica, sans-serif; /*fallback for Khand on web*/
-  }
-
-  nav ul li a{
-    font-size: 16px;
-		height: auto;
-  }
-
-  nav ul {
-    position: fixed;
-    width: 100%;
-    height: auto;
-    background: var(--dblue);
-    top: 80px;
-    left: -900px;
-    text-align: center;
-		transition: all .5s;
-		z-index: 9999;
-		margin: auto;
-  }
-	
-  nav ul li{
-    display: block;
-    margin: 20px;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover  {
-    color: var(--gold);
-	}
-	
-  #check:checked ~ ul {
-    left: 0;
 	}
 
 	.visit_img {
