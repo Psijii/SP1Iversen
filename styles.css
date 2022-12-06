@@ -126,6 +126,12 @@ a:hover {
 	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%), url('images/tickets.jpg');
 	height: 300px;
 }
+.hero_about_img {
+	background-image: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%), url('images/cosmos_about_bg.jpg');
+	height: 300px;
+}
+
+
 .headline_box {
 	width: 400px;
 	height: 250px;
@@ -144,14 +150,6 @@ a:hover {
 }
 
 
-.hero_explore {
-	background-image: url('images/vr.jpg');
-	height: 400px;
-	background-position: center;
-	background-size: cover;
-	width: 100%;
-	margin-bottom: 10px;
-}
 
 /*events exhibitions etc */
 .exhibit_hlines h2 {
