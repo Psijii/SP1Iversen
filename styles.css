@@ -126,7 +126,7 @@ a:hover {
 	height: 300px;
 }
 .headline_box {
-	width: 480px;
+	width: 400px;
 	height: 250px;
 	position: absolute;
 	top: 10%;
@@ -751,7 +751,7 @@ footer {
 	}
 
 	.headline_box {
-		width: 300px;
+		max-width: 300px;
 		display: flex;
 		flex-direction: column;
 		font-size: 18px;
