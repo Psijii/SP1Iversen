@@ -131,7 +131,6 @@ a:hover {
 	height: 300px;
 }
 
-
 .headline_box {
 	width: 400px;
 	height: 250px;
@@ -207,6 +206,7 @@ a:hover {
 	align-items: baseline;
 	justify-content: center;
 	color: var(--white);
+	padding: 10px;
 }
 
 .explore_scroll_bg,
@@ -216,7 +216,6 @@ a:hover {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 10px;
 }
 
 .explore {
@@ -250,8 +249,7 @@ a:hover {
 	color: var(--gold);
 }
 
-.explore_text_box,
-.explore_research_text_box {
+.explore_text_box {
 	display: flex;
 	flex-direction: column;
 	width: auto;
@@ -262,11 +260,12 @@ a:hover {
 	object-fit: cover;
 	width: 330px;
 }
+
 .visit_content {
 	display: flex;
 	flex-direction: row-reverse;
-
 }
+
 .visit_text_box {
 	display: flex;
 	flex-direction: column;
@@ -345,7 +344,6 @@ textarea {
   height: 150px;
   line-height: 150%;
   resize:vertical;
-	
 }
 
 [type="submit"] {
@@ -739,11 +737,10 @@ footer {
  .footer_dist .footer_cent i {
 	 margin-left: 0;
  }
-	.explore_research,
-	.explore {
+	.explore_research {
 		display: flex;
 		flex-direction: column-reverse;
-		min-width: 100%;
+		max-width: 100%;
 	}
 
 	.museum_info_hrs,
@@ -755,7 +752,8 @@ footer {
 	}
 
 	.hero_index {
-		height: 340px;
+		height: 300px;
+		
 	}
 
 	.headline_box {
@@ -764,11 +762,6 @@ footer {
 		flex-direction: column;
 		font-size: 18px;
 }
-
-	.headline_events,
-	.events_bg  {
-		padding: 3px;
-	}
 
  .container_index {
 		padding: 20px;
