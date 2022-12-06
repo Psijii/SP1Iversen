@@ -29,7 +29,7 @@
 						<li class="list-items"><a href="events.html">EVENTS</a></li>
 						<li class="list-items"><a href="exhibitions.html">EXHIBITONS</a></li>
 						<li class="list-items"><a href="getinvolved.html">GET INVOLVED</a></li>
-						<li class="list-items"><a href="tickets.html">BUY TICKETS</a></li>
+            <li class="list-items"><a href="about.html">ABOUT US</a></li>
 					</ul>
 				</nav>
 			</div></div>
@@ -42,7 +42,7 @@
     <div class="hero_index hero_visit_img"><!--hero image-->
       <div class="headline_box">
         <div class="hero_text_exhibit">
-          <h1>PLAN YOUR VISIT AT SCI mu</h1>
+          <h1>PLAN YOUR VISIT</h1>
         </div>
      </div>
     </div>
@@ -85,29 +85,48 @@
         </div>
       </div>
 		</div>
-	<div class="explore">
-			<img class="explore_photo visit_img" src="images/mail_contact.jpg" alt="envelope">
-			<div class="visit_text_box">
-		<div class="desc_text">
-		<h2 class="explore_hline">Contact us</h2>
-		<p>If you have any questions or feedback, do not hestitate to contact us with your concerns.</p>
-	<form id="contact_us">      
-		<input name="name" type="text" class="feedback_input" placeholder="Your name">   
-		<input name="email" type="text" class="feedback_input" placeholder="Your e-mail">
-		<input name="subject" type="text" class="feedback_input" placeholder="Subject">
-		<textarea name="text" class="feedback_input" placeholder="Comment"></textarea>
-		<input type="submit" value="SUBMIT"></form>
-			</div>
-		</div>
+
+<div id="form">
+	<div class="form-text">
+		<h2>Book a tour</h2>
+			<p>With guided tours tickets you and your group receive a free handy booklet that explains the curiosity cabinets
+				at our museum. The booklet has thorough explanation of all our exhibitions, ranging from Mesolithic archaeology 
+				to science and physics in space.</p>
+				<p>Payment for the tour will be at the museum.</p></div>
+	<div class="main-form">
+			<form><div><span>Your full name</span>
+							<input type="text" name="name" id="name" placeholder="Write your name here" required></div>
+					<div><span>Your email address</span>
+							<input type="email" name="name" id="name" placeholder="Write your email here" required></div>
+					<div><span>How many people?</span>
+							<select name="people" id="people" required>
+								<option value="">Select</option>
+								<option value="1">1 People</option>
+								<option value="2">2 People</option>
+								<option value="3">3 People</option>
+								<option value="4">4 People</option>
+								<option value="5">5 People</option>
+								<option value="6">6 People</option></select></div>
+					<div><span>Time of the day</span>
+							<input type="text" name="time" id="time" placeholder="Time" required></div>
+					<div><span>Date of your visit</span>
+							<input type="date" name="date" id="date" placeholder="date" required></div>
+					<div><span>Your phone number</span>
+							<input type="number" name="number" id="number" placeholder="Write your number here" required></div>
+					<div id="submit"><input type="submit" value="SUBMIT" id="submit"></div>
+			</form>
 	</div>
 </div>
+</div>
+
+
 </main>
 	<!--footer starts here-->
 	<footer class="footer_dist">
 		<div class="footer_left">
 			<div class="logo"><a href="index.html">SCImu</a></div>
 				<p class="footer_links">
-				<a href="index.html"><i class="fa-solid fa-house-chimney"></i></a> | <a href="visit.html">VISIT</a> | <a href="explore.html">EXPLORE</a> | <a href="visit.html#contact_us">CONTACT</a></p>
+					<a href="index.html"><i class="fa-solid fa-house-chimney"></i></a> | <a href="visit.html">VISIT</a> | <a href="explore.html">EXPLORE</a> | <a href="visit.html#contact_us">CONTACT</a> | <a href="visit.html#form">BOOK A TOUR</a></p>
 			<p class="footer_logo">© 2022 SCI mu </p></div>
 		<div class="footer_cent">
 			<div class="footer_company_about">

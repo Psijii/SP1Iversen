@@ -4,20 +4,20 @@
 	--gold: #D9A443;
 	--lblue: #2E505F;
 	--white: #F5F8F0;
-	--almostblack: #01080D;
+	--almostblack: #052135;
 }
  ::selection {
   color: var(--almostblack);
   background: var(--white);
  }
 /*removes unremovable overflow in responsive mode*/
-html { 
+/*html { 
 	overflow:auto; 
 }
 
 body {
 	overflow: auto; 
-}
+}*/
 
 /*bg styles etc */
 body {
@@ -94,6 +94,7 @@ a:hover {
 	align-items: baseline;
 	justify-content: center;
 	background-color: var(--dblue);
+	width: 500px;
 	
 }
 
@@ -275,6 +276,7 @@ a:hover {
 .museum_info_bg {
 	background-color: var(--lblue);
 	height: auto;
+	width: 100%;
 }
 
 .museumopen {
@@ -415,15 +417,18 @@ li a:hover {
   display: none;
 }
 /*ticket orering form*/
-.form {
-	width: 650px;
+#form {
+	width: 970px;
 	margin: auto;
+	margin-bottom: 10px;
 	background-color: var(--almostblack);
 }
 
+
 .form-text {
-	text-align: center;
+	text-align: left;
 	margin: 0 0 40px 0;
+	padding: 10px;
 }
 
 .form-text h1 span img {
@@ -476,7 +481,6 @@ li a:hover {
 .main-form div span {
 	width: 100%;
 	color: var(--white);
-
 }
 
 #submit {
@@ -500,12 +504,6 @@ li a:hover {
 	color: var(--white);
 }
 
-
-@media screen and (max-width:710px) {
-	.main-form{
-			text-align: center;
-	}
-}
 
 /*responsive footer */
 footer {
@@ -646,10 +644,16 @@ footer {
 (max-width:768px),
 (max-width: 1024px),
 (max-width: 900px) {
+	.main-form{
+		text-align: center;
+}
 
-.explore,
-.visit_text_box
-.desc_text {
+	a {
+		text-decoration: underline;
+	}
+.visit_text_box,
+.desc_text,
+.form {
 	display: flex;
 	flex-direction: column;
 	width: 350px;
@@ -678,6 +682,7 @@ footer {
     align-items: center;
     transform: translateX(-1200px);
 		z-index: 9999;
+		
 	}
 
   .main-menu.show {
@@ -689,6 +694,7 @@ footer {
   .main-menu li a {
     margin-bottom: 10px;
     display: block;
+		text-decoration: none;
   }
 
   .menu-btn {

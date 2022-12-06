@@ -28,6 +28,7 @@
 						<li class="list-items"><a href="events.html">EVENTS</a></li>
 						<li class="list-items"><a href="exhibitions.html">EXHIBITONS</a></li>
 						<li class="list-items"><a href="getinvolved.html">GET INVOLVED</a></li>
+						<li class="list-items"><a href="tickets.html">BUY TICKETS</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -41,14 +42,45 @@
   <div class="hero_index hero_tickets_img"><!--hero image-->
     <div class="headline_box">
       <div class="hero_text_exhibit">
-      <h1 class="hero_text">BOOK A TOUR</h1>
+      <h1 class="hero_text">PAYMENT</h1>
       </div>
    </div>
   </div>
+  <div class="mainscreen">
+      <div class="card">
+        <div class="leftside">
+          <img src="images/dino_ticket.jpg" class="product" alt="Dinosaur with tickets">
+        </div>
+        <div class="rightside">
+          <form action="">
+            <h1>Check out</h1>
+            <h2>Payment information</h2>
+            <p>Cardholder name</p>
+            <input type="text" class="inputbox" name="name" required placeholder="Your name">
+            <p>Card Number</p>
+            <input type="number" class="inputbox" name="card_number" id="card_number" required placeholder="Your credit card number">
 
- 
+            <p>Card Type</p>
+            <select class="inputbox" name="card_type" id="card_type" required>
+              <option value="">Select a card type</option>
+              <option value="Visa">Visa</option>
+              <option value="MasterCard">MasterCard</option>
+            </select>
+<div class="expcvv">
 
+            <p class="expcvv_text">Expiry</p>
+            <input type="date" class="inputbox" name="exp_date" id="exp_date" required>
 
+            <p class="expcvv_text2">CVV</p>
+            <input type="password" class="inputbox" name="cvv" id="cvv" required placeholder="xxx">
+        </div>
+            <p></p>
+            <button type="submit" class="button">Check out</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  
 
 
 
