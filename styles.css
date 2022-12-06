@@ -11,13 +11,13 @@
   background: var(--white);
  }
 /*removes unremovable overflow in responsive mode*/
- /*html { 
+html { 
 	overflow:auto; 
 }
 
 body {
 	overflow: auto; 
-}*/
+}
 
 /*bg styles etc */
 body {
@@ -515,9 +515,10 @@ footer {
 .footer_dist {
 	background-color: var(--almostblack);
 	box-sizing: border-box;
-	width: 100%;
 	text-align: left;
 	padding: 50px;
+	width: 100%;
+	
 }
 
 .footer_dist .footer_left,
