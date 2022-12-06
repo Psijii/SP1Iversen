@@ -381,6 +381,7 @@ textarea {
 	top: 0;
 	z-index: 9999;
 	box-shadow: var(--shadow);	
+	border-radius: 0;
 }
 
 .row_navbar {
@@ -422,6 +423,7 @@ textarea {
 	margin: auto;
 	margin-bottom: 10px;
 	background-color: var(--almostblack);
+	box-shadow: var(--shadow);
 }
 
 .form-text {
@@ -458,6 +460,7 @@ textarea {
 	padding: 10px;
 	margin-top: 10px;
 	border-radius: 5px;
+	box-shadow: var(--shadow);
 }
 
 .main-form input:focus {
@@ -473,6 +476,7 @@ textarea {
 	padding: 10px;
 	margin-top: 10px;
 	border-radius: 5px;
+	box-shadow: var(--shadow);
 }
 
 .main-form select:focus {
