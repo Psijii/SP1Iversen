@@ -199,6 +199,9 @@ a:hover {
 .museum_night_event_index_img {
 	background-image: url('images/museumnight.jpg');
 }
+.about_cosmos_img {
+	background-image: url('images/cosmos_about.jpg');
+}
 
 /*explore page*/
 .headline_events {
@@ -321,7 +324,7 @@ form {
 	width: 100%;
 }
 #contact_us {
-	width: 100%;
+	width: 90%;
 }
 
 .feedback_input {
@@ -656,7 +659,7 @@ footer {
 .form {
 	display: flex;
 	flex-direction: column;
-	width: 350px;
+	
 	}
 
 	img,
@@ -781,7 +784,8 @@ footer {
 	.visit_img {
 		transform: scaleX(-1);
 		object-fit: cover;
-		width: 100%;
+		height: 100%;
+		
 	}
 
 	.explore,
