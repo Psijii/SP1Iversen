@@ -34,7 +34,8 @@ div,
 form,
 input,
 textarea,
-iframe {
+iframe,
+p {
 	max-width: 100%;
 	border-radius: 5px; 
 	color: var(--white);
@@ -87,7 +88,6 @@ a:hover {
 
 .hero_text {
 	text-align: center;
-	font-size: xx-large;
 	text-shadow: var(--shadow);
 }
 
@@ -128,17 +128,13 @@ a:hover {
 }
 
 .space_event {
-	font-size: x-large;
+	font-size: 24px;
 	text-align: center;
 	color: var(--white);
 	text-shadow: var(--shadow);
+	
 }
-
 /*events exhibitions etc */
-.exhibit_hlines h2 {
-	color: var(--gold);
-}
-
 .gallery {
 	width: 300px;
 	margin: 8px;
@@ -156,7 +152,7 @@ a:hover {
 
 .desc_headline {
 	text-align: left;
-	font-size: large;
+	font-size: 18px;
 	padding: 5px;
 }
 
@@ -194,6 +190,7 @@ a:hover {
 .visit_museumhall { background-image: url('images/museumhall.jpg');}
 .visit_access_img { background-image: url('images/wheelchair.jpg');}
 .visit_museum_cafe { background-image: url('images/museum_cafe.jpg');}
+
 /*explore page*/
 .headline_events {
 	display: flex;
@@ -229,12 +226,7 @@ a:hover {
 .explore_img {
   transform: scaleX(-1);
 	object-fit: cover;
-	height: 300px;
-	
-}
-
-.explore_hiline h2 {
-	color: var(--gold);
+	height: 300px;	
 }
 
 /*visit page */
@@ -282,7 +274,6 @@ a:hover {
 }
 
 .visit_hrs_text {
- font-size: x-large;
  margin:  auto;
  padding: 5px;
  color: inherit;
@@ -291,9 +282,17 @@ a:hover {
 form { 
 	width: 100%;
 }
+.contact_form_container {
+	width: 950px;
+	margin: auto;
+}
+
+.contact_us {
+	width: 100%;
+}
 
 #contact_us {
-	width: 100%;
+	width: auto;
 }
 
 .feedback_input {
@@ -375,7 +374,7 @@ textarea {
 .main-menu li a {
   display: inline-block;
   padding: 10px 20px;
-	font-size: x-large;
+	font-size: 24px;
 	font-weight: 100;
 }
 
@@ -397,14 +396,10 @@ textarea {
 	padding: 10px;
 }
 
-.form-text h1 span img {
+.form-text span img {
 	margin: 0 10px;
 }
 
-.form-text h1 {
-	color: var(--white);
-	margin-bottom: 20px;
-}
 
 .form-text p {
 	color: var(--white);
@@ -521,7 +516,6 @@ footer {
 
 .footer_dist .footer_logo{
 	color:  var(--white);
-	font-size: 14px;
 	margin: 0;
 }
 
@@ -531,7 +525,6 @@ footer {
 
 .footer_dist .footer_cent i {
 	color: var(--white);
-	font-size: 25px;
 	width: 38px;
 	height: 38px;
 	text-align: center;
@@ -542,7 +535,6 @@ footer {
 
 .footer_dist 
 .footer_cent {
-	font-size: 16px;
 	line-height: 38px;
 }
 
@@ -556,7 +548,6 @@ footer {
 .footer_dist .footer_cent p span {
 	display:block;
 	font-weight: normal;
-	font-size: 16px;
 	line-height:2;
 }
 
@@ -573,7 +564,6 @@ footer {
 .footer_dist .footer_company_about {
 	line-height: 20px;
 	color:  var(--gold);
-	font-size: 16px;
 	font-weight: 100;
 	margin: 0;
 }
@@ -581,7 +571,6 @@ footer {
 .footer_dist .footer_company_about span {
 	display: block;
 	color:  var(--white);
-	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }
@@ -594,7 +583,6 @@ footer {
 	display: inline-block;
 	width: 35px;
 	height: 35px;
-	font-size: 20px;
 	text-align: center;
 	line-height: 35px;
 	margin-right: 3px;
@@ -623,7 +611,12 @@ iframe {
 	max-width: 100%;
 	border-radius: 5px;
 	}
-
+	.contact_form_container {
+		width: 85%;
+		padding: 10px;
+		margin: auto;
+	}
+	
 .museum_info_hrs,
 .museumopen,
 .explore,
@@ -671,7 +664,7 @@ iframe {
   color: var(--white);
   top: 10px;
   right: 30px;
-  font-size: 2rem;
+  font-size: 32px;
 	}
 
 .hero_text {
@@ -679,10 +672,10 @@ iframe {
 	color: var(--white);	
 	}
 
-.hero_text_exhibit h1 {
+.hero_text_exhibit {
 	width: auto;
 	padding: 2px;
-	font-size: 20px;
+	font-size: 14px;
 	}
 
 .hero_text_exhibit {
@@ -719,18 +712,13 @@ iframe {
 	font-size: 18px;
 	}
 
-.container_index {
-	padding: 20px;
-	}
-
-.headline_events h2 {
-	padding: 5px;
-	}
-
 .visit_hrs_text {
 	font-size: 16px;
 	font-weight: bold;
 	}
+.space_event {
+	font-size: 18px;
+}
 
 .gallerybg {
 	display: flex;
