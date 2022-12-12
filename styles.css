@@ -331,7 +331,7 @@ textarea {
 }
 
 [type="submit"] {
-  width: 20%;
+  width: auto;
   background: var(--lblue);
   border: 0;
   cursor: pointer;
