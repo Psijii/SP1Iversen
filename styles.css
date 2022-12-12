@@ -7,7 +7,8 @@
 	--almostblack: #052135;
 	--shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 	--dark-gradient: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
-	--light-gradient: linear-gradient(0deg, rgba(46, 80, 95, 1) 10%, rgba(0,0,0,0) 80%)
+	--light-gradient: linear-gradient(0deg, rgba(46, 80, 95, 1) 10%, rgba(0,0,0,0) 80%);
+	--shadow-soft: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
  ::selection {
@@ -35,7 +36,8 @@ img,
 div,
 form,
 input,
-textarea {
+textarea,
+iframe {
 	max-width: 100%;
 	border-radius: 5px; 
 	color: var(--white);
@@ -86,10 +88,6 @@ a:hover {
 	margin: 0;
 }
 
-.hero_index_img {
-	background-image: var(--light-gradient), url('images/hero_space.jpg');
-}
-
 .hero_text {
 	text-align: center;
 	font-size: xx-large;
@@ -104,7 +102,7 @@ a:hover {
 	width: 500px;
 	box-shadow: var(--shadow);	
 }
-
+/*hero image collection */
 .hero_involve_img,
 .hero_exhibit_img,
 .hero_visit_img,
@@ -114,29 +112,13 @@ a:hover {
 	height: 300px;
 }
 
-.hero_involve_img {
-	background-image: var(--dark-gradient), url('images/museumnight.jpg');
-}
-
-.hero_exhibit_img {
-	background-image: var(--dark-gradient), url('images/explore.jpg');
-}
-
-.hero_visit_img {
-	background-image: var(--dark-gradient), url('images/museumbuilding.JPG');
-}
-
-.hero_explore_img {
-	background-image: var(--dark-gradient), url('images/cosmos.jpg');
-}
-
-.hero_event_img {
-	background-image: var(--dark-gradient), url('images/museumevent.jpg');
-}
-
-.hero_about_img {
-	background-image: var(--dark-gradient), url('images/cosmos_about_bg.jpg');
-}
+.hero_index_img { background-image: var(--light-gradient), url('images/hero_space.jpg'); }
+.hero_involve_img { background-image: var(--dark-gradient), url('images/museumnight.jpg'); }
+.hero_exhibit_img { background-image: var(--dark-gradient), url('images/explore.jpg'); }
+.hero_visit_img { background-image: var(--dark-gradient), url('images/museumbuilding.JPG'); }
+.hero_explore_img { background-image: var(--dark-gradient), url('images/cosmos.jpg'); }
+.hero_event_img { background-image: var(--dark-gradient), url('images/museumevent.jpg'); }
+.hero_about_img { background-image: var(--dark-gradient), url('images/cosmos_about_bg.jpg'); }
 
 .headline_box {
 	width: 400px;
@@ -163,7 +145,8 @@ a:hover {
 .gallery {
 	width: 300px;
 	margin: 8px;
-	box-shadow: var(--shadow);}
+	box-shadow: var(--shadow);
+}
 
 .container_index {
 	display: flex;	
@@ -188,22 +171,27 @@ a:hover {
 .photo {
 	height: 200px;
 	background-size: cover;
+	box-shadow: var(--shadow-soft);	
 }
-
-.prof_event_img {
-	background-image: url('images/spaceprof.jpg');
-}
-
-.energy_event_img {
-	background-image: url('images/energy.jpg');
-}
-
-.museum_night_event_index_img {
-	background-image: url('images/museumnight.jpg');
-}
-.about_cosmos_img {
-	background-image: url('images/cosmos_about.jpg');
-}
+/*image collections */
+.prof_event_img { background-image: url('images/spaceprof.jpg'); }
+.energy_event_img { background-image: url('images/energy.jpg'); }
+.museum_night_event_index_img { background-image: url('images/museumnight.jpg'); }
+.about_cosmos_img { background-image: url('images/cosmos_about.jpg'); }
+.space_prof_explore_crop { background-image: url('images/spaceprof_crop.jpg'); }
+.astronaut_explore { background-image: url('images/moonindex.jpg'); }
+.moon_explore_img { background-image: url('images/moon.jpg'); }
+.museum_night_event_img { background-image: url('images/museum_night_event.jpg'); }
+.energy_event_photo { background-image: url('images/energy.jpg'); }
+.cosmos_exhibit_img { background-image: url('images/peoplecosmos.jpg');}
+.skeleton_exhibit_img { background-image: url('images/skeletons.jpg');}
+.butterflies_exhibit_img { background: url('images/butterflies2.jpg');}
+.robothand_img { background-image: url('images/robothand.jpg');}
+.eco_exhibit_img { background-image: url('images/naturejar.jpg');}
+.involved_artwork_img { background-image: url('images/artwork.jpg');}
+.involved_statue_img { background-image: url('images/statuehead.jpg');}
+.involved_dino_img { background-image: url('images/skeleton.jpg');}
+.about_scientist_img { background-image: url('images/scienceproject.jpg');}
 
 /*explore page*/
 .headline_events {
@@ -214,6 +202,7 @@ a:hover {
 	padding: 10px;
 }
 
+/*parallax scroll bg */
 .explore_scroll_bg,
 .headline_events {
 	background-image: url('images/stars.jpg');
@@ -242,14 +231,11 @@ a:hover {
 	width: 100%;
 }
 
-.explore_photo {
-	height: 100%;
-}
-
 .explore_img {
   transform: scaleX(-1);
 	object-fit: cover;
-	height: 330px;
+	height: 400px;
+	width: 900px;
 }
 
 .explore_hiline h2 {
@@ -341,7 +327,8 @@ form {
   width:100%;
   box-sizing: border-box;
   outline:0;
-	box-shadow: var(--shadow);}
+	box-shadow: var(--shadow);
+}
 
 .feedback_input:focus { 
 	border:1px solid var(--gold);
@@ -373,7 +360,6 @@ textarea {
 }
 
 /*navbar*/
-
 .container_navbar {
   background-color: var(--dblue);
 	width: 100%;
@@ -487,27 +473,27 @@ textarea {
 	color: var(--white);
 }
 
-#submit {
+#submit_msg {
 	width: 100%;
 	text-align: center;
 	border: none;
 	margin-bottom: 10px;
 }
 
-#submit input {
+#submit_msg input {
 	width: 200px;
 	background-color: var(--lblue);
 	color: var(--white);
 	transition: all .3s;
 }
 
-#submit input:hover {
+#submit_msg input:hover {
 	width: 200px;
 	background-color: var(--dblue);
 	color: var(--gold) 
 }
 
-#submit input:active {
+#submit_msg input:active {
 	background-color: var(--dblue);
 	color: var(--white);
 }
@@ -549,13 +535,13 @@ footer {
 }
 
 .footer_dist .footer_links a {
-	display:inline-block;
+	display: inline-block;
 	line-height: 1.8;
 	font-weight: 100;
 }
 
 .footer_dist .footer_logo{
-	color:  var(--lblue);
+	color:  var(--white);
 	font-size: 14px;
 	margin: 0;
 }
@@ -642,7 +628,7 @@ footer {
 (max-width: 1024px),
 (max-width: 900px) {
 
-.main-form{
+.main-form {
 	text-align: center;
 	}
 
@@ -655,8 +641,8 @@ div,
 form,
 input,
 iframe {
-		max-width: 100%;
-		border-radius: 5px;
+	max-width: 100%;
+	border-radius: 5px;
 	}
 
 .museum_info_hrs,
@@ -769,9 +755,9 @@ iframe {
 	}
 
 .explore_img,
-.explore_photo,
 .visit_img {
-	height: 100%;	
+	height: 300px;
+	width: 400px;
 	}
 
 .visit_hrs_text {
