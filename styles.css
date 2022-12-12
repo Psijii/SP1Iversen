@@ -192,7 +192,9 @@ a:hover {
 .involved_statue_img { background-image: url('images/statuehead.jpg');}
 .involved_dino_img { background-image: url('images/skeleton.jpg');}
 .about_scientist_img { background-image: url('images/scienceproject.jpg');}
-
+.teacher_index_img { background-image: url('images/teacher.jpg');}
+.sciencekids_index_img { background-image: url('images/sciencekids.jpg');}
+.index_museum_img { background-image: url('images/museumlibrary.jpg');}
 /*explore page*/
 .headline_events {
 	display: flex;
@@ -221,31 +223,19 @@ a:hover {
 	padding: 10px;
 	margin-bottom: 10px;
 	display: flex;
-	flex-direction: row-reverse;
-	box-shadow: var(--shadow);
-}
-
-.explore_research {
-	display: flex;
 	flex-direction: column-reverse;
-	width: 100%;
+	box-shadow: var(--shadow);
 }
 
 .explore_img {
   transform: scaleX(-1);
 	object-fit: cover;
 	height: 300px;
-	width: 900px;
+	width: 100%;
 }
 
 .explore_hiline h2 {
 	color: var(--gold);
-}
-
-.explore_text_box {
-	display: flex;
-	flex-direction: column;
-	width: auto;
 }
 
 /*visit page */
@@ -314,7 +304,7 @@ form {
 }
 
 #contact_us {
-	width: 90%;
+	width: 100%;
 }
 
 .feedback_input {
