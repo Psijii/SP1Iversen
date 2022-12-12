@@ -95,11 +95,15 @@
   <div class="container_index">
     <div class="desc_text"><h2 class="explore_hline">Contact us</h2>
       <p>If you have any questions or feedback, do not hestitate to contact us with your concerns.</p>
-      <form id="contact_us">      
-        <input name="name" type="text" class="feedback_input" placeholder="Your name">   
-        <input name="email" type="text" class="feedback_input" placeholder="Your e-mail">
-        <input name="subject" type="text" class="feedback_input" placeholder="Subject">
-        <textarea name="text" class="feedback_input" placeholder="Comment"></textarea>
+      <form id="contact_us">
+        <label for="name">Your name</label>      
+        <input name="name" id="name" type="text" class="feedback_input" placeholder="John Doe" required>  
+        <label for="email">Your e-mail</label> 
+        <input name="email" id="email" type="text" class="feedback_input" placeholder="example@mail.com" required>
+        <label for="subject">Subject</label>
+        <input name="subject" id= "subject" type="text" class="feedback_input" placeholder="Comment here" required>
+        <label for="text">Your feedback</label>
+        <textarea name="text" id="text" class="feedback_input" placeholder="Comment"></textarea>
         <input type="submit" value="Submit">
       </form>
     </div>
