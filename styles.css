@@ -195,6 +195,9 @@ a:hover {
 .teacher_index_img { background-image: url('images/teacher.jpg');}
 .sciencekids_index_img { background-image: url('images/sciencekids.jpg');}
 .index_museum_img { background-image: url('images/museumlibrary.jpg');}
+.visit_museumhall { background-image: url('images/museumhall.jpg');}
+.visit_access_img { background-image: url('images/wheelchair.jpg');}
+.visit_museum_cafe { background-image: url('images/museum_cafe.jpg');}
 /*explore page*/
 .headline_events {
 	display: flex;
@@ -231,7 +234,7 @@ a:hover {
   transform: scaleX(-1);
 	object-fit: cover;
 	height: 300px;
-	width: 100%;
+	
 }
 
 .explore_hiline h2 {
@@ -239,19 +242,9 @@ a:hover {
 }
 
 /*visit page */
-.visit_img {
-	object-fit: cover;
-	width: 330px;
-}
-
-.visit_content {
-	display: flex;
-	flex-direction: row-reverse;
-}
-
 .visit_text_box {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	width: auto;
 }
 
@@ -685,12 +678,6 @@ iframe {
   font-size: 2rem;
 	}
 
-.visit_content {
-	display: flex;
-	flex-direction: row-reverse;
-	width: auto;
-	}
-
 .hero_text {
 	text-align: center;
 	color: var(--white);	
@@ -742,12 +729,6 @@ iframe {
 
 .headline_events h2 {
 	padding: 5px;
-	}
-
-.explore_img,
-.visit_img {
-	height: 300px;
-	width: 400px;
 	}
 
 .visit_hrs_text {
