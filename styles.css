@@ -1,21 +1,19 @@
-/*root styles */
 :root {
 	--dblue: #1C3240;
 	--gold: #D9A443;
 	--lblue: #2E505F;
 	--white: #F5F8F0;
-	--almostblack: #052135;
+	--almostblack: #021725;
 	--shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 	--dark-gradient: linear-gradient(0deg, rgba(28,50,64,1) 17%, rgba(0,0,0,0) 100%);
 	--light-gradient: linear-gradient(0deg, rgba(46, 80, 95, 1) 10%, rgba(0,0,0,0) 80%);
-	--shadow-soft: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
  ::selection {
   color: var(--almostblack);
   background: var(--white);
  }
-/*removes unremovable overflow in responsive mode*/
+
 html { 
 	overflow:auto; 
 }
@@ -24,7 +22,6 @@ body {
 	overflow: auto; 
 }
 
-/*bg styles etc */
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
@@ -171,7 +168,6 @@ a:hover {
 .photo {
 	height: 200px;
 	background-size: cover;
-	box-shadow: var(--shadow-soft);	
 }
 /*image collections */
 .prof_event_img { background-image: url('images/spaceprof.jpg'); }
