@@ -35,7 +35,8 @@ form,
 input,
 textarea,
 iframe,
-p {
+p,
+span {
 	max-width: 100%;
 	border-radius: 5px; 
 	color: var(--white);
@@ -130,7 +131,6 @@ a:hover {
 .space_event {
 	font-size: 24px;
 	text-align: center;
-	color: var(--white);
 	text-shadow: var(--shadow);
 	
 }
@@ -174,7 +174,6 @@ a:hover {
 .astronaut_explore { background-image: url('images/moonindex.jpg'); }
 .moon_explore_img { background-image: url('images/moon.jpg'); }
 .museum_night_event_img { background-image: url('images/museum_night_event.jpg'); }
-.energy_event_photo { background-image: url('images/energy.jpg'); }
 .cosmos_exhibit_img { background-image: url('images/peoplecosmos.jpg');}
 .skeleton_exhibit_img { background-image: url('images/skeletons.jpg');}
 .butterflies_exhibit_img { background: url('images/butterflies2.jpg');}
@@ -196,7 +195,6 @@ a:hover {
 	display: flex;
 	align-items: baseline;
 	justify-content: center;
-	color: var(--white);
 	padding: 10px;
 }
 
@@ -224,7 +222,6 @@ a:hover {
 }
 
 .explore_img {
-  transform: scaleX(-1);
 	object-fit: cover;
 	height: 300px;	
 }
@@ -296,7 +293,6 @@ form {
 }
 
 .feedback_input {
-  color: var(--white);
   background-color: var(--lblue);
   border:1px solid var(--dblue);
   transition: all 0.3s;
@@ -319,7 +315,7 @@ textarea {
 }
 
 [type="submit"] {
-  width: auto;
+  width: 200px;
   background: var(--lblue);
   border: 0;
   cursor: pointer;
@@ -329,8 +325,9 @@ textarea {
   padding-bottom: 10px;
   transition: all 0.3s;
   margin-top: -4px;
-	box-shadow: var(--shadow);}
-
+	box-shadow: var(--shadow);
+}
+	
 [type="submit"]:hover { 
 	background:var(--dblue); 
 	color: var(--gold);
@@ -400,11 +397,6 @@ textarea {
 	margin: 0 10px;
 }
 
-
-.form-text p {
-	color: var(--white);
-}
-
 .main-form div {
 	margin: 10px 10px;
 	width: 300px;
@@ -415,7 +407,6 @@ textarea {
 	width: 90%;
 	background: var(--dblue);
 	border: 1px solid var(--lblue);
-	color: var(--white);
 	outline: none;
 	padding: 10px;
 	margin-top: 10px;
@@ -444,7 +435,6 @@ textarea {
 }
 .main-form div span {
 	width: 100%;
-	color: var(--white);
 }
 
 #submit_msg {
@@ -457,7 +447,6 @@ textarea {
 #submit_msg input {
 	width: 200px;
 	background-color: var(--lblue);
-	color: var(--white);
 	transition: all .3s;
 }
 
@@ -515,7 +504,6 @@ footer {
 }
 
 .footer_dist .footer_logo{
-	color:  var(--white);
 	margin: 0;
 }
 
@@ -540,7 +528,6 @@ footer {
 
 .footer_dist .footer_cent p {
 	display: inline-block;
-	color: var(--white);
 	vertical-align: middle;
 	margin: 0;
 }
@@ -570,7 +557,6 @@ footer {
 
 .footer_dist .footer_company_about span {
 	display: block;
-	color:  var(--white);
 	font-weight: bold;
 	margin-bottom: 20px;
 }
@@ -611,10 +597,10 @@ iframe {
 	max-width: 100%;
 	border-radius: 5px;
 	}
-	.contact_form_container {
-		width: 85%;
-		padding: 10px;
-		margin: auto;
+.contact_form_container {
+	width: 85%;
+	padding: 10px;
+	margin: auto;
 	}
 	
 .museum_info_hrs,
@@ -695,11 +681,11 @@ iframe {
 	margin-left: 0;
  	}
 
-.explore_research {
-	display: flex;
-	flex-direction: column-reverse;
-	max-width: 100%;
+.explore_img {
+	height: 150px;
+	width: 356px;	
 	}
+	
 	
 .hero_index {
 	height: 300px;	
