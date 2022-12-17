@@ -154,6 +154,7 @@ a:hover {
 	text-align: left;
 	font-size: 18px;
 	padding: 5px;
+	color: var(--gold);
 }
 
 .desc_text {
@@ -189,6 +190,7 @@ a:hover {
 .visit_museumhall { background-image: url('images/museumhall.jpg');}
 .visit_access_img { background-image: url('images/wheelchair.jpg');}
 .visit_museum_cafe { background-image: url('images/museum_cafe.jpg');}
+.visit_museum_shop { background-image: url('images/toys.jpg');}
 
 /*explore page*/
 .headline_events {
@@ -208,6 +210,14 @@ a:hover {
 	background-size: cover;
 }
 
+.confirm {
+	width: 900px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
 .explore {
 	background-color: var(--almostblack);
 	margin: auto;
@@ -224,6 +234,7 @@ a:hover {
 .explore_img {
 	object-fit: cover;
 	height: 300px;	
+	background-repeat: no-repeat;
 }
 
 /*visit page */
@@ -442,24 +453,9 @@ textarea {
 	text-align: center;
 	border: none;
 	margin-bottom: 10px;
+	font-size: 40px;
 }
 
-#submit_msg input {
-	width: 200px;
-	background-color: var(--lblue);
-	transition: all .3s;
-}
-
-#submit_msg input:hover {
-	width: 200px;
-	background-color: var(--dblue);
-	color: var(--gold) 
-}
-
-#submit_msg input:active {
-	background-color: var(--dblue);
-	color: var(--white);
-}
 
 /*responsive footer */
 footer {
@@ -682,8 +678,11 @@ iframe {
  	}
 
 .explore_img {
-	height: 150px;
-	width: 356px;	
+  background-size: 100%;
+	Background-repeat: no-repeat;
+	object-fit: cover;
+	height: 156px;
+	
 	}
 	
 	
